@@ -41,6 +41,7 @@ I design **decision-safe architectures** that let enterprises scale AI and autom
 
 ## Showcase repos (technical proof)
 A few representative public repos (architecture + APIs + industry patterns):
+- Red Team / Blue Team Agent Fabric (security harness + 200+ tests): https://github.com/msaleme/red-team-blue-team-agent-fabric
 - Oil & Gas Agent Fabric APIs: https://github.com/msaleme/agent-fabric-oilgas-apis
 - Energy field service integration (Agentforce/ServiceNow/SAP): https://github.com/msaleme/energy-field-service-integration
 - MuleSoft Kafka Oil & Gas accelerator: https://github.com/msaleme/mulesoft-kafka-oilgas-accelerator
