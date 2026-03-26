@@ -9,6 +9,8 @@ I design **decision-safe architectures** that let enterprises scale AI and autom
 **Decision Load Index (DLI)** is a conceptual framework for measuring real-world cognitive burden (open loops, unprocessed inputs, overdue commitments, competing scope) using system-level signals—so leaders can reduce friction and execution risk.
 
 - Paper (Zenodo, DOI): https://doi.org/10.5281/zenodo.18217577
+- **Constitutional Self-Governance (CSG)** — WHO vs HOW governance gap for AI agents. DOI: https://doi.org/10.5281/zenodo.19162104
+- **Detecting Normalization of Deviance (NoD)** — Runtime evidence for spotting drift in autonomous systems. DOI: https://doi.org/10.5281/zenodo.19195516
 
 ## New working paper (Mar 26, 2026)
 **Governed Multi-Agent Execution** — why the bottleneck shifts from “can an agent do this?” to “can we govern many agents without drowning the human?”
