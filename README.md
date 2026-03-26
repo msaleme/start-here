@@ -10,10 +10,26 @@ I design **decision-safe architectures** that let enterprises scale AI and autom
 
 - Paper (Zenodo, DOI): https://doi.org/10.5281/zenodo.18217577
 
-## Executive brief (Oil & Gas)
-Trusted context inside Salesforce for CEO/COO outcomes (margin resilience, execution reliability, reduced escalation load):
-- Site: https://msaleme.github.io/oilgas-exec-site/
-- Book time: https://calendly.com/mspro3210/30min
+## New working paper (Mar 26, 2026)
+**Governed Multi-Agent Execution** — why the bottleneck shifts from “can an agent do this?” to “can we govern many agents without drowning the human?”
+- Draft: `docs/GOVERNED_MULTI_AGENT_EXECUTION_PAPER_REWRITE_2026-03-26.md`
+- Claim: Multi-agent software development becomes a governance problem before it becomes a scaling success.
+
+## Signals & microsites
+- **Trusted Context Signal (weekly data)** → https://msaleme.github.io/trusted-context-signal-site/  
+  Polygon 22-ticker pipeline + trading telemetry + macro overlays for outreach decks and executive briefings.
+- **Executive brief (Oil & Gas)** → https://msaleme.github.io/oilgas-exec-site/  
+  Trusted context inside Salesforce for CEO/COO outcomes (margin resilience, execution reliability, reduced escalation load).
+  - Book time: https://calendly.com/mspro3210/new-meeting
+  - Or email **trusted@synapseops.com**
+
+> **Book a Trusted Context Diagnostic**  
+> 45-minute working session to surface decision-load hotspots in your Salesforce org.  
+> ✅ Pre-read: Decision Load Index benchmark  
+> ✅ Follow-up: Blueprint excerpt + governance checklist  
+> 💡 Optional: $3K Guardrail Audit credit applies to the $18K Trusted Context sprint when booked this month.  
+> <https://calendly.com/mspro3210/new-meeting> • Or email **trusted@synapseops.com**  
+> _Signal Ops provides operational research and decision-support services only. No investment, legal, or tax advice. Illustrative telemetry, no performance guarantee. Client data retained ≤30 days post-engagement._
 
 ## Featured talks (YouTube)
 - Agent Fabric in Oil & Gas — Webinar Series (4/4): https://www.youtube.com/watch?v=XrrWj4B8HtU
