@@ -1,54 +1,73 @@
-# Michael Saleme — Start Here
+# Michael Saleme - Start Here
 
-If you’re here for **executive-grade clarity** on AI, integration, and operating risk in complex environments, this is the fastest path.
+I build tools that test whether AI agents make safe decisions under adversarial conditions. Published research, production-validated, open source.
 
-## What I do (one line)
-I design **decision-safe architectures** that let enterprises scale AI and automation **without losing control**.
+## The Flagship: Agent Security Harness
 
-## The anchor idea: Decision Load Index (DLI)
-**Decision Load Index (DLI)** is a conceptual framework for measuring real-world cognitive burden (open loops, unprocessed inputs, overdue commitments, competing scope) using system-level signals—so leaders can reduce friction and execution risk.
+**332 adversarial security tests** for AI agent systems. 4 wire protocols (MCP, A2A, L402, x402), 24 modules, 20+ enterprise platforms.
 
-- Paper (Zenodo, DOI): https://doi.org/10.5281/zenodo.18217577
-- **Constitutional Self-Governance (CSG)** — WHO vs HOW governance gap for AI agents. DOI: https://doi.org/10.5281/zenodo.19162104
-- **Detecting Normalization of Deviance (NoD)** — Runtime evidence for spotting drift in autonomous systems. DOI: https://doi.org/10.5281/zenodo.19195516
+**Now also an MCP server** - any AI agent can invoke security tests directly.
 
-## New working paper (Mar 26, 2026)
-**Governed Multi-Agent Execution** — why the bottleneck shifts from “can an agent do this?” to “can we govern many agents without drowning the human?”
-- Draft: `docs/GOVERNED_MULTI_AGENT_EXECUTION_PAPER_REWRITE_2026-03-26.md`
-- Claim: Multi-agent software development becomes a governance problem before it becomes a scaling success.
+- **PyPI:** `pip install agent-security-harness`
+- **GitHub:** [red-team-blue-team-agent-fabric](https://github.com/msaleme/red-team-blue-team-agent-fabric)
+- **GitHub Action:** `uses: msaleme/red-team-blue-team-agent-fabric@v3.8`
 
-## Signals & microsites
-- **Trusted Context Signal (weekly data)** → https://msaleme.github.io/trusted-context-signal-site/  
-  Polygon 22-ticker pipeline + trading telemetry + macro overlays for outreach decks and executive briefings.
-- **Executive brief (Oil & Gas)** → https://msaleme.github.io/oilgas-exec-site/  
-  Trusted context inside Salesforce for CEO/COO outcomes (margin resilience, execution reliability, reduced escalation load).
-  - Book time: https://calendly.com/mspro3210/new-meeting
-  - Or email **trusted@synapseops.com**
+### Validated
+- **97.9% pass rate** against production systems (Wilson 95% CI [0.943, 0.994])
+- **Independent validation** by DrCookies84 against live infrastructure ([AutoGen #7432](https://github.com/microsoft/autogen/discussions/7432))
+- **22 rounds** of critical evaluation, 125 issues raised, 94 fixed, 10/10 final score
+- **CVE-2026-25253** (CVSS 8.8) - our MCP tests catch the exact supply chain attack vector
 
-> **Book a Trusted Context Diagnostic**  
-> 45-minute working session to surface decision-load hotspots in your Salesforce org.  
-> ✅ Pre-read: Decision Load Index benchmark  
-> ✅ Follow-up: Blueprint excerpt + governance checklist  
-> 💡 Optional: $3K Guardrail Audit credit applies to the $18K Trusted Context sprint when booked this month.  
-> <https://calendly.com/mspro3210/new-meeting> • Or email **trusted@synapseops.com**  
-> _Signal Ops provides operational research and decision-support services only. No investment, legal, or tax advice. Illustrative telemetry, no performance guarantee. Client data retained ≤30 days post-engagement._
+### What it includes
+- Attestation JSON Schema (structured security reports)
+- AIUC-1 Certification Prep (maps to all 24 requirements)
+- Free MCP Security Scan (5-test, A-F grading)
+- Monthly Agent Security Report pipeline
+- Discord Security Scan Bot
+- Real multi-trial statistical testing (Wilson CIs, NIST AI 800-2 aligned)
 
-## Featured talks (YouTube)
-- Agent Fabric in Oil & Gas — Webinar Series (4/4): https://www.youtube.com/watch?v=XrrWj4B8HtU
-- Webinar Series (3/4): https://www.youtube.com/watch?v=ZegJdZcR1Sk
-- Webinar Series (2/4): https://www.youtube.com/watch?v=pWqkIqJFFG0
-- Webinar Series (1/4): https://www.youtube.com/watch?v=X26PE2FnFOM
+## Published Research (3 DOIs)
 
-## Showcase repos (technical proof)
-A few representative public repos (architecture + APIs + industry patterns):
-- Red Team / Blue Team Agent Fabric (security harness + 200+ tests): https://github.com/msaleme/red-team-blue-team-agent-fabric
-- Oil & Gas Agent Fabric APIs: https://github.com/msaleme/agent-fabric-oilgas-apis
-- Energy field service integration (Agentforce/ServiceNow/SAP): https://github.com/msaleme/energy-field-service-integration
-- MuleSoft Kafka Oil & Gas accelerator: https://github.com/msaleme/mulesoft-kafka-oilgas-accelerator
-- Oracle ↔ Salesforce integration (Weatherford): https://github.com/msaleme/weatherford-oracle-salesforce-integration
-- SharePointVectors (RAG + SharePoint + Salesforce): https://github.com/msaleme/SharePointVectors
+| Paper | DOI | What it proves |
+|---|---|---|
+| **Decision Load Index (DLI)** | [10.5281/zenodo.18217577](https://doi.org/10.5281/zenodo.18217577) | AI agents increase cognitive burden. Here's how to measure it. |
+| **Constitutional Self-Governance (CSG)** | [10.5281/zenodo.19162104](https://doi.org/10.5281/zenodo.19162104) | The WHO vs HOW governance gap. 77 days production data, 56 agents. |
+| **Normalization of Deviance (NoD)** | [10.5281/zenodo.19195516](https://doi.org/10.5281/zenodo.19195516) | Gateway defenses provide zero protection for protocol-level attacks. |
 
-## Where to follow
-- LinkedIn: https://www.linkedin.com/in/mikesaleme/
-- X: https://x.com/mikesaleme
-- YouTube: https://www.youtube.com/@michaelsaleme7028
+**3 NIST submissions:** CAISI RFI (Mar 1), NIST-CONCEPT-1 (Mar 12), NCCoE follow-up (Mar 21, 2026).
+
+## How I Position This
+
+Most AI security tools scan configurations or test models. This framework sends real adversarial payloads over the wire and observes what breaks. It's the difference between `npm audit` and a penetration test.
+
+**Complementary to:** Invariant MCP-Scan (static scanning), Cisco MCP Scanner (YARA rules), Snyk Agent Scan (config analysis), NVIDIA Garak (model-layer).
+
+**Unique to us:** Multi-protocol (MCP + A2A + L402 + x402), AIUC-1 mapping, MCP server mode, research backing (3 DOIs + NIST), attestation registry, production validation.
+
+## Services
+
+| Tier | What you get | Price |
+|---|---|---|
+| **Open Source** | 332 tests, GitHub Action, MCP server, attestation reports | Free |
+| **Guardrail Audit** | Run the harness against your deployment + 30-min remediation walkthrough | $3,000 |
+| **Trusted Context Sprint** | Full decision governance implementation + ongoing advisory | $18,000 |
+
+## Book Time
+
+> **[Schedule a call](https://calendly.com/mspro3210/new-meeting)** | **trusted@synapseops.com**
+>
+> _Signal Ops provides operational research and decision-support services only. No investment, legal, or tax advice._
+
+## Active Community
+
+- **Moltbook:** [Signal-Lab-Ops-Bot](https://moltbook.com/u/Signal-Lab-Ops-Bot) - 36+ comment threads on agent security
+- **A2A Protocol:** Runtime attestation discussion ([#1677](https://github.com/a2aproject/A2A/discussions/1677), 11 comments)
+- **AutoGen:** Security testing for multi-agent systems ([#7432](https://github.com/microsoft/autogen/discussions/7432), 22 comments)
+- **AIUC-1:** Pre-certification readiness tool ([mapping](https://github.com/msaleme/red-team-blue-team-agent-fabric#aiuc-1-pre-certification-crosswalk))
+
+## Where to Follow
+
+- **GitHub:** [msaleme](https://github.com/msaleme)
+- **X:** [@mikesaleme](https://x.com/mikesaleme) (DLI article: 9.2K views)
+- **LinkedIn:** [mikesaleme](https://www.linkedin.com/in/mikesaleme/)
+- **PyPI:** [agent-security-harness](https://pypi.org/project/agent-security-harness/) (109 downloads/day)
