@@ -4,7 +4,7 @@ I build tools that test whether AI agents make safe decisions under adversarial 
 
 ## The Flagship: Agent Security Harness
 
-**332 adversarial security tests** for AI agent systems. 4 wire protocols (MCP, A2A, L402, x402), 24 modules, 20+ enterprise platforms.
+**342 adversarial security tests** for AI agent systems. 4 wire protocols (MCP, A2A, L402, x402), 24 modules, 20+ enterprise platforms.
 
 **Now also an MCP server** - any AI agent can invoke security tests directly.
 
