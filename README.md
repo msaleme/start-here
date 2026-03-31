@@ -26,13 +26,15 @@ I build tools that test whether AI agents make safe decisions under adversarial 
 - Discord Security Scan Bot
 - Real multi-trial statistical testing (Wilson CIs, NIST AI 800-2 aligned)
 
-## Published Research (3 DOIs)
+## Published Research (5 DOIs)
 
 | Paper | DOI | What it proves |
 |---|---|---|
 | **Decision Load Index (DLI)** | [10.5281/zenodo.18217577](https://doi.org/10.5281/zenodo.18217577) | AI agents increase cognitive burden. Here's how to measure it. |
 | **Constitutional Self-Governance (CSG)** | [10.5281/zenodo.19162104](https://doi.org/10.5281/zenodo.19162104) | The WHO vs HOW governance gap. 77 days production data, 56 agents. |
 | **Normalization of Deviance (NoD)** | [10.5281/zenodo.19195516](https://doi.org/10.5281/zenodo.19195516) | Gateway defenses provide zero protection for protocol-level attacks. |
+| **Beyond Identity Governance** | [10.5281/zenodo.19343034](https://doi.org/10.5281/zenodo.19343034) | Empirical evidence: gateways miss protocol-layer attacks. The WHO vs HOW gap, formalized. |
+| **Community-Driven Security** | [10.5281/zenodo.19343108](https://doi.org/10.5281/zenodo.19343108) | How to scale security testing through community contribution without degrading integrity. |
 
 **3 NIST submissions:** CAISI RFI (Mar 1), NIST-CONCEPT-1 (Mar 12), NCCoE follow-up (Mar 21, 2026).
 
@@ -42,13 +44,13 @@ Most AI security tools scan configurations or test models. This framework sends 
 
 **Complementary to:** Invariant MCP-Scan (static scanning), Cisco MCP Scanner (YARA rules), Snyk Agent Scan (config analysis), NVIDIA Garak (model-layer).
 
-**Unique to us:** Multi-protocol (MCP + A2A + L402 + x402), AIUC-1 mapping, MCP server mode, research backing (3 DOIs + NIST), attestation registry, production validation.
+**Unique to us:** Multi-protocol (MCP + A2A + L402 + x402), AIUC-1 mapping, MCP server mode, research backing (5 DOIs + NIST), attestation registry, production validation.
 
 ## Services
 
 | Tier | What you get | Price |
 |---|---|---|
-| **Open Source** | 332 tests, GitHub Action, MCP server, attestation reports | Free |
+| **Open Source** | 342 tests, GitHub Action, MCP server, attestation reports | Free |
 | **Guardrail Audit** | Run the harness against your deployment + 30-min remediation walkthrough | $3,000 |
 | **Trusted Context Sprint** | Full decision governance implementation + ongoing advisory | $18,000 |
 
