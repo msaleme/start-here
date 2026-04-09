@@ -27,7 +27,7 @@ I study the gap between *who an agent is* and *how it behaves* — what I call t
 
 ## Agent Security Harness
 
-The research is implemented as an open-source testing framework: **430 executable tests across 24 modules**, covering 4 wire protocols (MCP, A2A, L402, x402).
+The research is implemented as an open-source testing framework: **430 executable tests across 29 modules**, covering 4 wire protocols (MCP, A2A, L402, x402).
 
 **[red-team-blue-team-agent-fabric](https://github.com/msaleme/red-team-blue-team-agent-fabric)** — Production-validated at 97.9% pass rate (Wilson 95% CI [0.943, 0.994]).
 
