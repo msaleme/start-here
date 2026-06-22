@@ -7,6 +7,8 @@
 
 > I research how AI agents fail under adversarial conditions, publish the findings, and ship the tools to test for them.
 
+**Latest:** Agent Security Harness v4.5.0 — 474 tests / 33 modules (June 2026).
+
 ---
 
 ## Published Research (5 DOIs)
@@ -27,7 +29,7 @@ I study the gap between *who an agent is* and *how it behaves* — what I call t
 
 ## Agent Security Harness
 
-The research is implemented as an open-source testing framework: **430 executable tests across 29 modules**, covering 4 wire protocols (MCP, A2A, L402, x402).
+The research is implemented as an open-source testing framework: **474 executable tests across 33 modules**, covering 4 wire protocols (MCP, A2A, L402, x402).
 
 **[red-team-blue-team-agent-fabric](https://github.com/msaleme/red-team-blue-team-agent-fabric)** — Production-validated at 97.9% pass rate (Wilson 95% CI [0.943, 0.994]).
 
@@ -36,7 +38,7 @@ pip install agent-security-harness
 agent-security test mcp --url http://your-server
 ```
 
-- **GitHub Action:** `uses: msaleme/red-team-blue-team-agent-fabric@v3.8`
+- **GitHub Action:** `uses: msaleme/red-team-blue-team-agent-fabric@v4.5`
 - **MCP Server:** any AI agent can invoke security tests directly
 - **AIUC-1 Prep:** maps to 15 of 20 testable certification requirements
 - **CVE-2026-25253** (CVSS 8.8) — our MCP tests catch this exact supply chain vector
@@ -90,13 +92,16 @@ Agent Fabric in Oil & Gas — Webinar Series:
 
 ---
 
-## Services
+## Use It
 
-| Tier | What you get | Price |
-|---|---|---|
-| **Open Source** | 430 tests, GitHub Action, MCP server, attestation reports | Free |
-| **Guardrail Audit** | Run the harness against your deployment + 30-min remediation walkthrough | $3,000 |
-| **Trusted Context Sprint** | Full decision governance implementation + ongoing advisory | $18,000 |
+Everything here is open source and free.
+
+- **Run it:** `pip install agent-security-harness`
+- **CI:** add the GitHub Action to your pipeline
+- **MCP server mode:** let your agent invoke the tests directly
+- **Free MCP Security Scan:** 5-test, A–F grading
+
+Open to research collaboration and standards work — see Connect below.
 
 ---
 
@@ -114,10 +119,8 @@ Agent Fabric in Oil & Gas — Webinar Series:
 - **LinkedIn:** [linkedin.com/in/mikesaleme](https://www.linkedin.com/in/mikesaleme/)
 - **X:** [x.com/mikesaleme](https://x.com/mikesaleme) (DLI article: 9.2K views)
 - **YouTube:** [youtube.com/@michaelsaleme7028](https://www.youtube.com/@michaelsaleme7028)
-- **PyPI:** [agent-security-harness](https://pypi.org/project/agent-security-harness/) (109 downloads/day)
-- **Book time:** [Calendly](https://calendly.com/mspro3210/new-meeting) | trusted@synapseops.com
-
-> _Signal Ops provides operational research and decision-support services only. No investment, legal, or tax advice._
+- **PyPI:** [agent-security-harness](https://pypi.org/project/agent-security-harness/)
+- **Contact:** trusted@synapseops.com (research & collaboration)
 
 ---
 
