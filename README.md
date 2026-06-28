@@ -9,6 +9,8 @@
 
 **The thesis: Enterprise Agent Architecture.** Enterprise architecture has four domains for what the enterprise builds and runs — Business, Information, Application, Technology — with Security across them all. None describe a non-human actor that holds delegated authority, acts autonomously, and composes tools it was never explicitly granted. Agents are not a new application tier. They are a new class of actor: a workforce. They need a fifth domain. That gap is the work.
 
+**Read the series:** [Enterprise Agent Architecture](https://msale00.substack.com) — the fifth domain, drawn one part at a time. Position paper live; canonical home at cognitivethoughtengine.com/eaa coming soon.
+
 **Latest:** Agent Security Harness v4.5.0 — 474 tests / 33 modules (June 2026).
 
 ---
