@@ -5,13 +5,19 @@
 [![X (Twitter)](https://img.shields.io/badge/X-@mikesaleme-000000?logo=x)](https://x.com/mikesaleme)
 [![PyPI](https://img.shields.io/badge/PyPI-agent--security--harness-3775A9?logo=pypi)](https://pypi.org/project/agent-security-harness/)
 
-> I research how AI agents fail under adversarial conditions, publish the findings, and ship the tools to test for them.
+> **Enterprise architect.** 30 years building production integration and architecture across Oil & Gas, Energy/Utilities, and CPG, since 1996. Now defining how enterprises architect a workforce of humans and AI agents.
+
+**The thesis: Enterprise Agent Architecture.** Enterprise architecture has four domains for what the enterprise builds and runs — Business, Information, Application, Technology — with Security across them all. None describe a non-human actor that holds delegated authority, acts autonomously, and composes tools it was never explicitly granted. Agents are not a new application tier. They are a new class of actor: a workforce. They need a fifth domain. That gap is the work.
 
 **Latest:** Agent Security Harness v4.5.0 — 474 tests / 33 modules (June 2026).
 
 ---
 
-## Published Research (5 DOIs)
+## The evidence
+
+I do not just write about the agent workforce. I build the tools that prove how it fails and the research that measures it. The architecture rests on this, not on opinion.
+
+### Published Research (5 DOIs)
 
 I study the gap between *who an agent is* and *how it behaves* — what I call the **WHO vs. HOW problem**. Identity and authorization don't prevent an authorized agent from being manipulated into unsafe decisions.
 
@@ -25,9 +31,7 @@ I study the gap between *who an agent is* and *how it behaves* — what I call t
 
 **Standards engagement:** 3 NIST submissions — CAISI RFI (Mar 1), NIST-CONCEPT-1 (Mar 12), NCCoE follow-up (Mar 21, 2026).
 
----
-
-## Agent Security Harness
+### Agent Security Harness
 
 The research is implemented as an open-source testing framework: **474 executable tests across 33 modules**, covering 4 wire protocols (MCP, A2A, L402, x402).
 
@@ -45,16 +49,14 @@ agent-security test mcp --url http://your-server
 - **Independent validation** by DrCookies84 against live infrastructure ([AutoGen #7432](https://github.com/microsoft/autogen/discussions/7432))
 - **22 rounds** of critical evaluation, 125 issues raised, 94 fixed, 10/10 final score
 
-### What it includes
+#### What it includes
 - Attestation JSON Schema (structured security reports)
 - Free MCP Security Scan (5-test, A-F grading)
 - Monthly Agent Security Report pipeline
 - Discord Security Scan Bot
 - Real multi-trial statistical testing (Wilson CIs, NIST AI 800-2 aligned)
 
----
-
-## How This Differs
+### How This Differs
 
 Most AI security tools scan configurations or test models. This framework sends real adversarial payloads over the wire and observes what breaks. The difference between `npm audit` and a penetration test.
 
@@ -64,22 +66,9 @@ Most AI security tools scan configurations or test models. This framework sends 
 
 ---
 
-## Featured Talks (YouTube)
-
-Agent Fabric in Oil & Gas — Webinar Series:
-
-| Part | Title | Link |
-|------|-------|------|
-| 1/4 | Introduction | [Watch](https://www.youtube.com/watch?v=X26PE2FnFOM) |
-| 2/4 | Deep Dive | [Watch](https://www.youtube.com/watch?v=pWqkIqJFFG0) |
-| 3/4 | Implementation | [Watch](https://www.youtube.com/watch?v=ZegJdZcR1Sk) |
-| 4/4 | Conclusion | [Watch](https://www.youtube.com/watch?v=XrrWj4B8HtU) |
-
----
-
 ## Enterprise Architecture
 
-15+ years building production integration systems across Oil & Gas, Energy/Utilities, and CPG.
+30 years building production integration systems across Oil & Gas, Energy/Utilities, and CPG. MuleSoft, Salesforce, SAP, Oracle, Kafka, Azure.
 
 | Repository | Description |
 |---|---|
@@ -89,6 +78,17 @@ Agent Fabric in Oil & Gas — Webinar Series:
 | [oracle-fusion-mulesoft-best-practices](https://github.com/msaleme/oracle-fusion-mulesoft-best-practices) | Oracle Fusion Cloud integration patterns |
 | [SharePointVectors](https://github.com/msaleme/SharePointVectors) | RAG pipeline: SharePoint to vectors to Salesforce |
 | [cpg-promotion-analysis](https://github.com/msaleme/cpg-promotion-analysis) | Agent Fabric + Agentforce + Copilot for CPG |
+
+### Featured Talks (YouTube)
+
+Agent Fabric in Oil & Gas — Webinar Series:
+
+| Part | Title | Link |
+|------|-------|------|
+| 1/4 | Introduction | [Watch](https://www.youtube.com/watch?v=X26PE2FnFOM) |
+| 2/4 | Deep Dive | [Watch](https://www.youtube.com/watch?v=pWqkIqJFFG0) |
+| 3/4 | Implementation | [Watch](https://www.youtube.com/watch?v=ZegJdZcR1Sk) |
+| 4/4 | Conclusion | [Watch](https://www.youtube.com/watch?v=XrrWj4B8HtU) |
 
 ---
 
