@@ -9,9 +9,9 @@
 
 **The thesis: Enterprise Agent Architecture.** Enterprise architecture has four domains for what the enterprise builds and runs — Business, Information, Application, Technology — with Security across them all. None describe a non-human actor that holds delegated authority, acts autonomously, and composes tools it was never explicitly granted. Agents are not a new application tier. They are a new class of actor: a workforce. They need a fifth domain. That gap is the work.
 
-**Read the series:** [Enterprise Agent Architecture](https://msale00.substack.com) — the fifth domain, drawn one part at a time. Position paper live; canonical home at cognitivethoughtengine.com/eaa coming soon.
+**Read the series:** [Enterprise Agent Architecture](https://msale00.substack.com) — the fifth domain, drawn one part at a time. Position paper: [doi.org/10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314). Canonical home: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa).
 
-**Latest:** Agent Security Harness v4.5.0 — 474 tests / 33 modules (June 2026).
+**Latest:** Agent Security Harness v4.8.0 — 532 tests / 37 modules across all four layers of the agentic-payments stack (July 2026).
 
 ---
 
@@ -19,23 +19,24 @@
 
 I do not just write about the agent workforce. I build the tools that prove how it fails and the research that measures it. The architecture rests on this, not on opinion.
 
-### Published Research (5 DOIs)
+### Published Research (6 DOIs)
 
 I study the gap between *who an agent is* and *how it behaves* — what I call the **WHO vs. HOW problem**. Identity and authorization don't prevent an authorized agent from being manipulated into unsafe decisions.
 
 | Paper | DOI | Key finding |
 |---|---|---|
+| **Enterprise Agent Architecture** (position paper) | [10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314) | The case for a fifth architecture domain: agents are a workforce, not an application tier. |
 | **Decision Load Index (DLI)** | [10.5281/zenodo.18217577](https://doi.org/10.5281/zenodo.18217577) | AI agents increase cognitive burden on operators. Here's how to measure it. |
 | **Constitutional Self-Governance (CSG)** | [10.5281/zenodo.19162104](https://doi.org/10.5281/zenodo.19162104) | The WHO vs. HOW governance gap — 77 days production data, 56 agents. |
 | **Normalization of Deviance (NoD)** | [10.5281/zenodo.19195516](https://doi.org/10.5281/zenodo.19195516) | Gateway defenses provide zero protection against protocol-level attacks. |
 | **Beyond Identity Governance** | [10.5281/zenodo.19343034](https://doi.org/10.5281/zenodo.19343034) | Empirical evidence: gateways miss protocol-layer attacks. The gap, formalized. |
 | **Community-Driven Security** | [10.5281/zenodo.19343108](https://doi.org/10.5281/zenodo.19343108) | Scaling security testing through community contribution without degrading integrity. |
 
-**Standards engagement:** 3 NIST submissions — CAISI RFI (Mar 1), NIST-CONCEPT-1 (Mar 12), NCCoE follow-up (Mar 21, 2026).
+**Standards engagement:** 3 NIST submissions — CAISI RFI (Mar 1), NIST-CONCEPT-1 (Mar 12), NCCoE follow-up (Mar 21, 2026). x402 conformance-vector contribution to the Linux Foundation x402 Foundation ([x402-foundation/x402#2776](https://github.com/x402-foundation/x402/pull/2776)).
 
 ### Agent Security Harness
 
-The research is implemented as an open-source testing framework: **474 executable tests across 33 modules**, covering 4 wire protocols (MCP, A2A, L402, x402).
+The research is implemented as an open-source testing framework: **532 executable tests across 37 modules**, covering all four layers of the agentic-payments stack — comms (MCP, A2A), merchant journey (UCP, ACP), authorization (AP2 mandate + Visa TAP / Mastercard Agentic Tokens), and settlement (x402, L402).
 
 **[red-team-blue-team-agent-fabric](https://github.com/msaleme/red-team-blue-team-agent-fabric)** — Production-validated at 97.9% pass rate (Wilson 95% CI [0.943, 0.994]).
 
@@ -44,7 +45,7 @@ pip install agent-security-harness
 agent-security test mcp --url http://your-server
 ```
 
-- **GitHub Action:** `uses: msaleme/red-team-blue-team-agent-fabric@v4.5`
+- **GitHub Action:** `uses: msaleme/red-team-blue-team-agent-fabric@v4.8.0`
 - **MCP Server:** any AI agent can invoke security tests directly
 - **AIUC-1 Prep:** maps to 15 of 20 testable certification requirements
 - **CVE-2026-25253** (CVSS 8.8) — our MCP tests catch this exact supply chain vector
@@ -64,7 +65,7 @@ Most AI security tools scan configurations or test models. This framework sends 
 
 **Complementary to:** Invariant MCP-Scan (static scanning), Cisco MCP Scanner (YARA rules), Snyk Agent Scan (config analysis), NVIDIA Garak (model-layer).
 
-**Unique to us:** Multi-protocol (MCP + A2A + L402 + x402), AIUC-1 mapping, MCP server mode, research backing (5 DOIs + NIST), attestation registry, production validation.
+**Unique to us:** Full-stack agentic-payments coverage (MCP + A2A + UCP/ACP + AP2 + card-network tokens + x402 + L402), AIUC-1 mapping, MCP server mode, research backing (6 DOIs + NIST + Linux Foundation x402 contribution), attestation registry, production validation.
 
 ---
 
