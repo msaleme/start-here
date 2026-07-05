@@ -19,12 +19,13 @@
 
 I do not just write about the agent workforce. I build the tools that prove how it fails and the research that measures it. The architecture rests on this, not on opinion.
 
-### Published Research (6 DOIs)
+### Published Research (7 DOIs)
 
-I study the gap between *who an agent is* and *how it behaves* — what I call the **WHO vs. HOW problem**. Identity and authorization don't prevent an authorized agent from being manipulated into unsafe decisions.
+I study the gap between *who an agent is* and *how it behaves* — what I call the **WHO vs. HOW problem**. Identity and authorization don't prevent an authorized agent from being manipulated into unsafe decisions. Together these papers form one research program: **machine-verifiable governance for autonomous systems**.
 
 | Paper | DOI | Key finding |
 |---|---|---|
+| **Present vs. Provable** (methodology) | [10.5281/zenodo.21208547](https://doi.org/10.5281/zenodo.21208547) | A testable conformance methodology for delegated payment authority — can a verifier *prove* the executed payment is the one authorized? |
 | **Enterprise Agent Architecture** (position paper) | [10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314) | The case for a fifth architecture domain: agents are a workforce, not an application tier. |
 | **Decision Load Index (DLI)** | [10.5281/zenodo.18217577](https://doi.org/10.5281/zenodo.18217577) | AI agents increase cognitive burden on operators. Here's how to measure it. |
 | **Constitutional Self-Governance (CSG)** | [10.5281/zenodo.19162104](https://doi.org/10.5281/zenodo.19162104) | The WHO vs. HOW governance gap — 77 days production data, 56 agents. |
@@ -65,7 +66,7 @@ Most AI security tools scan configurations or test models. This framework sends 
 
 **Complementary to:** Invariant MCP-Scan (static scanning), Cisco MCP Scanner (YARA rules), Snyk Agent Scan (config analysis), NVIDIA Garak (model-layer).
 
-**Unique to us:** Full-stack agentic-payments coverage (MCP + A2A + UCP/ACP + AP2 + card-network tokens + x402 + L402), AIUC-1 mapping, MCP server mode, research backing (6 DOIs + NIST + Linux Foundation x402 contribution), attestation registry, production validation.
+**Unique to us:** Full-stack agentic-payments coverage (MCP + A2A + UCP/ACP + AP2 + card-network tokens + x402 + L402), AIUC-1 mapping, MCP server mode, research backing (7 DOIs + NIST + Linux Foundation x402 contribution), attestation registry, production validation.
 
 ---
 
