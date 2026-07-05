@@ -68,6 +68,27 @@ Most AI security tools scan configurations or test models. This framework sends 
 
 **Unique to us:** Full-stack agentic-payments coverage (MCP + A2A + UCP/ACP + AP2 + card-network tokens + x402 + L402), AIUC-1 mapping, MCP server mode, research backing (7 DOIs + NIST + Linux Foundation x402 contribution), attestation registry, production validation.
 
+### Reference Implementation: HRAO-E
+
+The four-layer model is not a whitepaper waiting for a reference implementation. The reference implementation came first, and the architecture is the account of what it took to make it work.
+
+**HRAO-E** is a live, fully-governed autonomous organization — a workforce of 50+ autonomous agents running in production under a written constitution, with six-gate enforcement, per-agent delegated authority, and audit trails. It is a working instance of all four EAA layers: **Agent / Workforce · Capability / Tool · Control Plane · Governance**.
+
+- **The control-plane primitive, open-sourced:** [`constitutional-agent`](https://pypi.org/project/constitutional-agent/) on PyPI — the WHY-layer policy enforced at agent runtime, extracted from the system. `pip install constitutional-agent`
+- **Canonical home:** [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa) — the framework, the series, and the live proof.
+
+**The series** — the fifth domain, published one layer at a time:
+
+| Part | Layer | Status |
+|---|---|---|
+| Part 0 — The Case for a Fifth Architecture Domain | Position paper | Published — [DOI 10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314) |
+| Part 1 — No Box for a Non-Human Workforce | Agent / Workforce | [Published](https://cognitivethoughtengine.com/eaa/part-1) |
+| Part 2 — What an Agent Can Reach ≠ What It May Touch | Capability / Tool | [Published](https://cognitivethoughtengine.com/eaa/part-2) |
+| Part 3 | Control Plane | Forthcoming |
+| Part 4 | Governance | Forthcoming |
+
+**Practitioner artifacts:** [Agent Governance Maturity Model](https://cognitivethoughtengine.com/eaa/maturity-model) · [Standards Landscape](https://cognitivethoughtengine.com/eaa/standards-landscape) · [Board Questions](https://cognitivethoughtengine.com/eaa/board-questions) · [TOGAF / ArchiMate extension](https://cognitivethoughtengine.com/eaa/togaf-extension) · [The Governance Layer OpenClaw Skipped](https://cognitivethoughtengine.com/eaa/openclaw)
+
 ---
 
 ## Enterprise Architecture
