@@ -96,6 +96,10 @@ The four-layer model is not a whitepaper waiting for a reference implementation.
 
 30 years building production integration systems across Oil & Gas, Energy/Utilities, and CPG. MuleSoft, Salesforce, SAP, Oracle, Kafka, Azure.
 
+### Utilities & Grid Modernization
+
+**[utilities-grid-modernization](https://github.com/msaleme/utilities-grid-modernization)** — the curated electric-utility portfolio. Reference architectures, API contracts and implementation examples for grid operations, field service, customer programs, smart-meter telemetry and governed AI in utilities. Concepts, specifications, reference implementations and working code are each labeled as such; nothing claims deployment, customer adoption, certification, production readiness or measured outcomes.
+
 | Repository | Description |
 |---|---|
 | [agent-fabric-oilgas-apis](https://github.com/msaleme/agent-fabric-oilgas-apis) | OpenAPI 3.1 specs for Agent Fabric in Oil & Gas |
