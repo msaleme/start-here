@@ -40,7 +40,7 @@ I study the gap between *who an agent is* and *how it behaves* — what I call t
 
 The research is implemented as an open-source testing framework: **540 executable tests across 37 modules**, covering all four layers of the agentic-payments stack — comms (MCP, A2A), merchant journey (UCP, ACP), authorization (AP2 mandate + Visa TAP / Mastercard Agentic Tokens), and settlement (x402, L402).
 
-**[red-team-blue-team-agent-fabric](https://github.com/msaleme/red-team-blue-team-agent-fabric)** — Production-validated at 97.9% pass rate (Wilson 95% CI [0.943, 0.994]).
+**[red-team-blue-team-agent-fabric](https://github.com/msaleme/red-team-blue-team-agent-fabric)** — Adversarial agent-security test harness: 540 tests across 37 modules, AIUC-1 test mappings, JSON audit reports.
 
 ```bash
 pip install agent-security-harness
@@ -51,8 +51,8 @@ agent-security test mcp --url http://your-server
 - **MCP Server:** any AI agent can invoke security tests directly
 - **AIUC-1 Prep:** maps to 19 of 20 testable certification requirements
 - **CVE-2026-25253** (CVSS 8.8) — our MCP tests catch this exact supply chain vector
-- **Independent validation** by DrCookies84 against live infrastructure ([AutoGen #7432](https://github.com/microsoft/autogen/discussions/7432))
-- **22 rounds** of critical evaluation, 125 issues raised, 94 fixed, 10/10 final score
+- **Independently exercised and discussed** by a community user (DrCookies84) against live infrastructure ([AutoGen #7432](https://github.com/microsoft/autogen/discussions/7432))
+- **22 rounds** of internal critical evaluation, 125 issues raised, 94 fixed; the internal process concluded at 10/10 under its own rubric (self-evaluation, not independent scoring)
 
 #### What it includes
 - Attestation JSON Schema (structured security reports)
@@ -67,7 +67,7 @@ Most AI security tools scan configurations or test models. This framework sends 
 
 **Complementary to:** Invariant MCP-Scan (static scanning), Cisco MCP Scanner (YARA rules), Snyk Agent Scan (config analysis), NVIDIA Garak (model-layer).
 
-**Unique to us:** Full-stack agentic-payments coverage (MCP + A2A + UCP/ACP + AP2 + card-network tokens + x402 + L402), AIUC-1 mapping, MCP server mode, research backing (8 Zenodo preprint DOIs + 3 NIST submissions + Linux Foundation x402 contribution), attestation registry, production validation.
+**Unique to us:** Full-stack agentic-payments coverage (MCP + A2A + UCP/ACP + AP2 + card-network tokens + x402 + L402), AIUC-1 mapping, MCP server mode, research backing (5 Agent-Security-Harness preprints among 8 public Zenodo deposits + 3 NIST submissions + Linux Foundation x402 contribution), attestation registry.
 
 ### Reference Implementation: HRAO-E
 
@@ -103,7 +103,6 @@ The four-layer model is not a whitepaper waiting for a reference implementation.
 | Repository | Description |
 |---|---|
 | [agent-fabric-oilgas-apis](https://github.com/msaleme/agent-fabric-oilgas-apis) | OpenAPI 3.1 specs for Agent Fabric in Oil & Gas |
-| [energy-field-service-integration](https://github.com/msaleme/energy-field-service-integration) | Agentforce + ServiceNow + SAP field service |
 | [energy-api-evolution](https://github.com/msaleme/energy-api-evolution) | Documentation and integration scaffolding for grid/renewables/building-optimization API design — no API specs or running server |
 | [oracle-fusion-mulesoft-best-practices](https://github.com/msaleme/oracle-fusion-mulesoft-best-practices) | Oracle Fusion Cloud integration patterns |
 | [SharePointVectors](https://github.com/msaleme/SharePointVectors) | RAG pipeline: SharePoint to vectors to Salesforce |
