@@ -11,7 +11,7 @@
 
 **Read the series:** [Enterprise Agent Architecture](https://msale00.substack.com) — the fifth domain, drawn one part at a time. Position paper: [doi.org/10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314). Canonical home: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa).
 
-**Latest:** Agent Security Harness v4.8.0 — 532 tests / 37 modules across all four layers of the agentic-payments stack (July 2026).
+**Latest:** Agent Security Harness v4.9.1 — 540 tests / 37 modules across all four layers of the agentic-payments stack (July 2026).
 
 ---
 
@@ -19,9 +19,9 @@
 
 I do not just write about the agent workforce. I build the tools that prove how it fails and the research that measures it. The architecture rests on this, not on opinion.
 
-### Published Research (8 DOIs)
+### Published Research (8 Zenodo DOIs)
 
-I study the gap between *who an agent is* and *how it behaves* — what I call the **WHO vs. HOW problem**. Identity and authorization don't prevent an authorized agent from being manipulated into unsafe decisions. Together these papers form one research program: **machine-verifiable governance for autonomous systems**.
+I study the gap between *who an agent is* and *how it behaves* — what I call the **WHO vs. HOW problem**. Identity and authorization don't prevent an authorized agent from being manipulated into unsafe decisions. Together these papers form one research program: **machine-verifiable governance for autonomous systems**. All are public preprints deposited on Zenodo (not peer-reviewed).
 
 | Paper | DOI | Key finding |
 |---|---|---|
@@ -38,7 +38,7 @@ I study the gap between *who an agent is* and *how it behaves* — what I call t
 
 ### Agent Security Harness
 
-The research is implemented as an open-source testing framework: **532 executable tests across 37 modules**, covering all four layers of the agentic-payments stack — comms (MCP, A2A), merchant journey (UCP, ACP), authorization (AP2 mandate + Visa TAP / Mastercard Agentic Tokens), and settlement (x402, L402).
+The research is implemented as an open-source testing framework: **540 executable tests across 37 modules**, covering all four layers of the agentic-payments stack — comms (MCP, A2A), merchant journey (UCP, ACP), authorization (AP2 mandate + Visa TAP / Mastercard Agentic Tokens), and settlement (x402, L402).
 
 **[red-team-blue-team-agent-fabric](https://github.com/msaleme/red-team-blue-team-agent-fabric)** — Production-validated at 97.9% pass rate (Wilson 95% CI [0.943, 0.994]).
 
@@ -47,9 +47,9 @@ pip install agent-security-harness
 agent-security test mcp --url http://your-server
 ```
 
-- **GitHub Action:** `uses: msaleme/red-team-blue-team-agent-fabric@v4.8.0`
+- **GitHub Action:** `uses: msaleme/red-team-blue-team-agent-fabric@v4.9.1`
 - **MCP Server:** any AI agent can invoke security tests directly
-- **AIUC-1 Prep:** maps to 15 of 20 testable certification requirements
+- **AIUC-1 Prep:** maps to 19 of 20 testable certification requirements
 - **CVE-2026-25253** (CVSS 8.8) — our MCP tests catch this exact supply chain vector
 - **Independent validation** by DrCookies84 against live infrastructure ([AutoGen #7432](https://github.com/microsoft/autogen/discussions/7432))
 - **22 rounds** of critical evaluation, 125 issues raised, 94 fixed, 10/10 final score
@@ -67,7 +67,7 @@ Most AI security tools scan configurations or test models. This framework sends 
 
 **Complementary to:** Invariant MCP-Scan (static scanning), Cisco MCP Scanner (YARA rules), Snyk Agent Scan (config analysis), NVIDIA Garak (model-layer).
 
-**Unique to us:** Full-stack agentic-payments coverage (MCP + A2A + UCP/ACP + AP2 + card-network tokens + x402 + L402), AIUC-1 mapping, MCP server mode, research backing (7 DOIs + NIST + Linux Foundation x402 contribution), attestation registry, production validation.
+**Unique to us:** Full-stack agentic-payments coverage (MCP + A2A + UCP/ACP + AP2 + card-network tokens + x402 + L402), AIUC-1 mapping, MCP server mode, research backing (8 Zenodo preprint DOIs + 3 NIST submissions + Linux Foundation x402 contribution), attestation registry, production validation.
 
 ### Reference Implementation: HRAO-E
 
@@ -104,10 +104,9 @@ The four-layer model is not a whitepaper waiting for a reference implementation.
 |---|---|
 | [agent-fabric-oilgas-apis](https://github.com/msaleme/agent-fabric-oilgas-apis) | OpenAPI 3.1 specs for Agent Fabric in Oil & Gas |
 | [energy-field-service-integration](https://github.com/msaleme/energy-field-service-integration) | Agentforce + ServiceNow + SAP field service |
-| [energy-api-evolution](https://github.com/msaleme/energy-api-evolution) | 36 APIs for grid ops, renewables, building optimization |
+| [energy-api-evolution](https://github.com/msaleme/energy-api-evolution) | Documentation and integration scaffolding for grid/renewables/building-optimization API design — no API specs or running server |
 | [oracle-fusion-mulesoft-best-practices](https://github.com/msaleme/oracle-fusion-mulesoft-best-practices) | Oracle Fusion Cloud integration patterns |
 | [SharePointVectors](https://github.com/msaleme/SharePointVectors) | RAG pipeline: SharePoint to vectors to Salesforce |
-| [cpg-promotion-analysis](https://github.com/msaleme/cpg-promotion-analysis) | Agent Fabric + Agentforce + Copilot for CPG |
 
 ### Featured Talks (YouTube)
 
