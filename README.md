@@ -4,6 +4,7 @@
 [![YouTube](https://img.shields.io/badge/YouTube-Michael_Saleme-FF0000?logo=youtube)](https://www.youtube.com/@michaelsaleme7028)
 [![X (Twitter)](https://img.shields.io/badge/X-@mikesaleme-000000?logo=x)](https://x.com/mikesaleme)
 [![PyPI](https://img.shields.io/badge/PyPI-agent--security--harness-3775A9?logo=pypi)](https://pypi.org/project/agent-security-harness/)
+<!-- TODO(Mike): activate TikTok badge with your handle: [![TikTok](https://img.shields.io/badge/TikTok-@handle-000000?logo=tiktok)](https://www.tiktok.com/@HANDLE) -->
 
 > **Enterprise architect.** 30 years building production integration and architecture across Oil & Gas, Energy/Utilities, and CPG, since 1996. Now defining how enterprises architect a workforce of humans and AI agents.
 
@@ -11,7 +12,27 @@
 
 **Read the series:** [Enterprise Agent Architecture](https://msale00.substack.com) — the fifth domain, drawn one part at a time. Position paper: [doi.org/10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314). Canonical home: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa).
 
-**Latest:** Agent Security Harness v4.9.1 — 540 tests / 37 modules across all four layers of the agentic-payments stack (July 2026).
+**Latest:** Agent Security Harness v4.9.1 — 553 tests / 38 modules across all four layers of the agentic-payments stack (July 2026).
+
+---
+
+## Start here in five minutes
+
+**The thesis, in one sentence:** an AI agent is a new *class of actor* — a workforce that holds delegated authority — and enterprise architecture has no domain for it. Enterprise Agent Architecture (EAA) adds the fifth.
+
+**Why it isn't just an essay — three things you can inspect right now:**
+1. **Research** — 8 public Zenodo preprints + 3 NIST submissions measuring the *WHO vs. HOW* gap.
+2. **Tooling** — the [Agent Security Harness](https://github.com/msaleme/red-team-blue-team-agent-fabric): 553 executable tests across 38 modules. `pip install agent-security-harness`
+3. **A live reference implementation** — HRAO-E, a workforce of 50+ agents in production under a written constitution, implementing all four EAA layers.
+
+**Choose your path:**
+
+| You are a… | Start here |
+|---|---|
+| **Executive / leader** | [Position paper](https://doi.org/10.5281/zenodo.21105314) -> [Board Questions](https://cognitivethoughtengine.com/eaa/board-questions) -> [Agent Governance Maturity Model](https://cognitivethoughtengine.com/eaa/maturity-model) |
+| **Enterprise architect** | The series ([Part 1](https://cognitivethoughtengine.com/eaa/part-1) / [Part 2](https://cognitivethoughtengine.com/eaa/part-2)) -> [TOGAF / ArchiMate extension](https://cognitivethoughtengine.com/eaa/togaf-extension) -> the HRAO-E reference implementation (below) |
+| **Security researcher** | The [harness](https://github.com/msaleme/red-team-blue-team-agent-fabric) (553 tests / 38 modules) -> [AIUC-1 crosswalk](https://github.com/msaleme/red-team-blue-team-agent-fabric#aiuc-1-pre-certification-crosswalk) -> the 8 preprints below |
+| **Utility / energy practitioner** | [utilities-grid-modernization](https://github.com/msaleme/utilities-grid-modernization) — reference architectures for grid, field ops, meters, compliance, and governed AI |
 
 ---
 
@@ -38,9 +59,9 @@ I study the gap between *who an agent is* and *how it behaves* — what I call t
 
 ### Agent Security Harness
 
-The research is implemented as an open-source testing framework: **540 executable tests across 37 modules**, covering all four layers of the agentic-payments stack — comms (MCP, A2A), merchant journey (UCP, ACP), authorization (AP2 mandate + Visa TAP / Mastercard Agentic Tokens), and settlement (x402, L402).
+The research is implemented as an open-source testing framework: **553 executable tests across 38 modules**, covering all four layers of the agentic-payments stack — comms (MCP, A2A), merchant journey (UCP, ACP), authorization (AP2 mandate + Visa TAP / Mastercard Agentic Tokens), and settlement (x402, L402).
 
-**[red-team-blue-team-agent-fabric](https://github.com/msaleme/red-team-blue-team-agent-fabric)** — Adversarial agent-security test harness: 540 tests across 37 modules, AIUC-1 test mappings, JSON audit reports.
+**[red-team-blue-team-agent-fabric](https://github.com/msaleme/red-team-blue-team-agent-fabric)** — Adversarial agent-security test harness: 553 tests across 38 modules, AIUC-1 test mappings, JSON audit reports.
 
 ```bash
 pip install agent-security-harness
@@ -89,6 +110,19 @@ The four-layer model is not a whitepaper waiting for a reference implementation.
 | Part 4 | Governance | Forthcoming |
 
 **Practitioner artifacts:** [Agent Governance Maturity Model](https://cognitivethoughtengine.com/eaa/maturity-model) · [Standards Landscape](https://cognitivethoughtengine.com/eaa/standards-landscape) · [Board Questions](https://cognitivethoughtengine.com/eaa/board-questions) · [TOGAF / ArchiMate extension](https://cognitivethoughtengine.com/eaa/togaf-extension) · [The Governance Layer OpenClaw Skipped](https://cognitivethoughtengine.com/eaa/openclaw)
+
+---
+
+## EAA Current
+
+Short-form commentary connecting live agent developments — new protocols, incidents, vendor control-plane moves — back to the architecture. Product names support the argument; they are not the argument.
+
+Canonical commentary home: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa).
+
+<!-- TODO(Mike): add the EAA video assets before merge. Provide:
+       - EAA video playlist URL (YouTube / TikTok)
+       - your 3 strongest short videos (title + URL)
+     This section then becomes: playlist link + a 3-video table + an "EAA Current reactions" row. -->
 
 ---
 
