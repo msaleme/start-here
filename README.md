@@ -9,9 +9,9 @@
 
 **The thesis: Enterprise Agent Architecture.** Enterprise architecture has four domains for what the enterprise builds and runs — Business, Information, Application, Technology — with Security across them all. None describe a non-human actor that holds delegated authority, acts autonomously, and composes tools it was never explicitly granted. Agents are not a new application tier. They are a new class of actor: a workforce. They need a fifth domain. That gap is the work.
 
-**Read the series:** [Enterprise Agent Architecture](https://msale00.substack.com) — the fifth domain, drawn one part at a time. Position paper: [doi.org/10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314). Canonical home: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa).
+**Read the series:** [Enterprise Agent Architecture](https://cognitivethoughtengine.com/eaa) — the fifth domain, all four layers now published. Position paper: [doi.org/10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314). Canonical home: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa).
 
-**Latest:** Agent Security Harness v4.9.1 — 540 tests / 37 modules across all four layers of the agentic-payments stack (July 2026).
+**Latest:** The Enterprise Agent Architecture series is **complete** — all four layers ([Workforce](https://cognitivethoughtengine.com/eaa/part-1) · [Capability](https://cognitivethoughtengine.com/eaa/part-2) · [Control Plane](https://cognitivethoughtengine.com/eaa/part-3) · [Governance](https://cognitivethoughtengine.com/eaa/part-4)) published. `constitutional-agent` v0.7.0 adds **cross-session risk composition** — governance that remembers across sessions, catching accumulated risk that per-call gates miss. Agent Security Harness at v4.9.1 (540 tests / 37 modules). (July 2026)
 
 ---
 
@@ -19,7 +19,7 @@
 
 I do not just write about the agent workforce. I build the tools that prove how it fails and the research that measures it. The architecture rests on this, not on opinion.
 
-### Published Research (8 Zenodo DOIs)
+### Published Research (9 Zenodo DOIs)
 
 I study the gap between *who an agent is* and *how it behaves* — what I call the **WHO vs. HOW problem**. Identity and authorization don't prevent an authorized agent from being manipulated into unsafe decisions. Together these papers form one research program: **machine-verifiable governance for autonomous systems**. All are public preprints deposited on Zenodo (not peer-reviewed).
 
@@ -28,6 +28,7 @@ I study the gap between *who an agent is* and *how it behaves* — what I call t
 | **Present vs. Provable** (methodology) | [10.5281/zenodo.21208547](https://doi.org/10.5281/zenodo.21208547) | A testable conformance methodology for delegated payment authority — can a verifier *prove* the executed payment is the one authorized? |
 | **Enterprise Agent Architecture** (position paper) | [10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314) | The case for a fifth architecture domain: agents are a workforce, not an application tier. |
 | **Authorized but Refused** (telemetry) | [10.5281/zenodo.21263262](https://doi.org/10.5281/zenodo.21263262) | Six months, 451,163 events from a live autonomous enterprise: the governance layer refused its own *authenticated, authorized* agents 30,496 times. The measured base rate behind the WHO vs. HOW gap. |
+| **Authorized but Composed** (composition) | [10.5281/zenodo.21400261](https://doi.org/10.5281/zenodo.21400261) | The residual moat: risk that composes *across sessions*. An agent can pass every individual per-call gate yet cross an accumulated-risk threshold over a sequence — caught only if the governance layer remembers. What no stateless engine ships. |
 | **Decision Load Index (DLI)** | [10.5281/zenodo.18217577](https://doi.org/10.5281/zenodo.18217577) | AI agents increase cognitive burden on operators. Here's how to measure it. |
 | **Constitutional Self-Governance (CSG)** | [10.5281/zenodo.19162104](https://doi.org/10.5281/zenodo.19162104) | The WHO vs. HOW governance gap — 77 days production data, 56 agents. |
 | **Normalization of Deviance (NoD)** | [10.5281/zenodo.19195516](https://doi.org/10.5281/zenodo.19195516) | Gateway defenses provide zero protection against protocol-level attacks. |
@@ -67,7 +68,7 @@ Most AI security tools scan configurations or test models. This framework sends 
 
 **Complementary to:** Invariant MCP-Scan (static scanning), Cisco MCP Scanner (YARA rules), Snyk Agent Scan (config analysis), NVIDIA Garak (model-layer).
 
-**Unique to us:** Full-stack agentic-payments coverage (MCP + A2A + UCP/ACP + AP2 + card-network tokens + x402 + L402), AIUC-1 mapping, MCP server mode, research backing (5 Agent-Security-Harness preprints among 8 public Zenodo deposits + 3 NIST submissions + Linux Foundation x402 contribution), attestation registry.
+**Unique to us:** Full-stack agentic-payments coverage (MCP + A2A + UCP/ACP + AP2 + card-network tokens + x402 + L402), AIUC-1 mapping, MCP server mode, research backing (5 Agent-Security-Harness preprints among 9 public Zenodo deposits + 3 NIST submissions + Linux Foundation x402 contribution), attestation registry.
 
 ### Reference Implementation: HRAO-E
 
@@ -75,18 +76,18 @@ The four-layer model is not a whitepaper waiting for a reference implementation.
 
 **HRAO-E** is a live, fully-governed autonomous organization — a workforce of 50+ autonomous agents running in production under a written constitution, with six-gate enforcement, per-agent delegated authority, and audit trails. It is a working instance of all four EAA layers: **Agent / Workforce · Capability / Tool · Control Plane · Governance**.
 
-- **The control-plane primitive, open-sourced:** [`constitutional-agent`](https://pypi.org/project/constitutional-agent/) on PyPI — the WHY-layer policy enforced at agent runtime, extracted from the system. `pip install constitutional-agent`
+- **The control-plane primitive, open-sourced:** [`constitutional-agent`](https://pypi.org/project/constitutional-agent/) on PyPI (v0.7.0) — the WHY-layer policy enforced at agent runtime, extracted from the system. Ships **cross-session accumulated-risk composition**: risk state that persists and composes across sessions, so an agent that passes every per-call gate but crosses a cumulative threshold is still caught — the one control every stateless governance engine misses. `pip install constitutional-agent`
 - **Canonical home:** [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa) — the framework, the series, and the live proof.
 
-**The series** — the fifth domain, published one layer at a time:
+**The series** — the fifth domain, one layer at a time. **All four layers now published:**
 
 | Part | Layer | Status |
 |---|---|---|
 | Part 0 — The Case for a Fifth Architecture Domain | Position paper | Published — [DOI 10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314) |
 | Part 1 — No Box for a Non-Human Workforce | Agent / Workforce | [Published](https://cognitivethoughtengine.com/eaa/part-1) |
 | Part 2 — What an Agent Can Reach ≠ What It May Touch | Capability / Tool | [Published](https://cognitivethoughtengine.com/eaa/part-2) |
-| Part 3 | Control Plane | Forthcoming |
-| Part 4 | Governance | Forthcoming |
+| Part 3 — A Rule the Runtime Doesn't Enforce Is Theater | Control Plane | [Published](https://cognitivethoughtengine.com/eaa/part-3) |
+| Part 4 — When the Agent Acts, the Enterprise Answers | Governance | [Published](https://cognitivethoughtengine.com/eaa/part-4) |
 
 **Practitioner artifacts:** [Agent Governance Maturity Model](https://cognitivethoughtengine.com/eaa/maturity-model) · [Standards Landscape](https://cognitivethoughtengine.com/eaa/standards-landscape) · [Board Questions](https://cognitivethoughtengine.com/eaa/board-questions) · [TOGAF / ArchiMate extension](https://cognitivethoughtengine.com/eaa/togaf-extension) · [The Governance Layer OpenClaw Skipped](https://cognitivethoughtengine.com/eaa/openclaw)
 
