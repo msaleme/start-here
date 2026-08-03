@@ -113,7 +113,6 @@ HRAO-E is a live production reference environment for constitutionally governed 
 
 | Repository | Description |
 |---|---|
-| [agent-fabric-oilgas-apis](https://github.com/msaleme/agent-fabric-oilgas-apis) | OpenAPI 3.1 specs for Agent Fabric in Oil & Gas |
 | [energy-api-evolution](https://github.com/msaleme/energy-api-evolution) | Integration scaffolding for grid / renewables / building-optimization API design |
 | [oracle-fusion-mulesoft-best-practices](https://github.com/msaleme/oracle-fusion-mulesoft-best-practices) | Oracle Fusion Cloud integration patterns |
 | [SharePointVectors](https://github.com/msaleme/SharePointVectors) | RAG pipeline: SharePoint → vectors → Salesforce |
