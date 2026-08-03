@@ -105,22 +105,6 @@ HRAO-E is a live production reference environment for constitutionally governed 
 
 ---
 
-## Enterprise Architecture
-
-30 years building production integration systems across Oil & Gas, Energy/Utilities, and CPG. MuleSoft, Salesforce, SAP, Oracle, Kafka, Azure.
-
-**[utilities-grid-modernization](https://github.com/msaleme/utilities-grid-modernization)** — a curated electric-utility portfolio: reference architectures, API contracts, and implementation examples for grid operations, field service, customer programs, smart-meter telemetry, and governed AI in utilities. Concepts, specifications, and reference implementations are each labeled as such.
-
-| Repository | Description |
-|---|---|
-| [energy-api-evolution](https://github.com/msaleme/energy-api-evolution) | Integration scaffolding for grid / renewables / building-optimization API design |
-| [oracle-fusion-mulesoft-best-practices](https://github.com/msaleme/oracle-fusion-mulesoft-best-practices) | Oracle Fusion Cloud integration patterns |
-| [SharePointVectors](https://github.com/msaleme/SharePointVectors) | RAG pipeline: SharePoint → vectors → Salesforce |
-
-Talks: [Agent Fabric in Oil & Gas — 4-part webinar series](https://www.youtube.com/@michaelsaleme7028).
-
----
-
 ## Connect
 
 - **LinkedIn:** [linkedin.com/in/mikesaleme](https://www.linkedin.com/in/mikesaleme/)
