@@ -73,7 +73,6 @@ An open-source framework that sends real adversarial payloads over the wire and 
 - **GitHub Action:** `uses: msaleme/red-team-blue-team-agent-fabric@v4.15.0`
 - **MCP server mode:** any AI agent can invoke the tests directly.
 - **AIUC-1 crosswalk:** maps to the testable certification requirements — [see the mapping](https://github.com/msaleme/red-team-blue-team-agent-fabric#aiuc-1-pre-certification-crosswalk).
-- **Supply-chain coverage:** includes tests for the MCP vector tracked as [CVE-2026-25253](https://github.com/msaleme/red-team-blue-team-agent-fabric) (CVSS 8.8).
 - **Independently exercised** by a community user against live infrastructure ([AutoGen discussion](https://github.com/microsoft/autogen/discussions/7432)).
 
 **How it differs.** Unlike configuration scanners, the harness sends adversarial protocol traffic and evaluates the resulting behavior. It complements static scanning and does not replace a scoped penetration test. Complementary to Invariant MCP-Scan (static), Cisco MCP Scanner (YARA), Snyk Agent Scan (config), NVIDIA Garak (model-layer). Distinct in full-stack agentic-payments coverage, AIUC-1 mapping, MCP server mode, and research backing.
@@ -110,9 +109,7 @@ HRAO-E is a live production reference environment for constitutionally governed 
 - **X:** [x.com/mikesaleme](https://x.com/mikesaleme)
 - **PyPI:** [agent-security-harness](https://pypi.org/project/agent-security-harness/) · [constitutional-agent](https://pypi.org/project/constitutional-agent/)
 - **Community:** [A2A runtime attestation](https://github.com/a2aproject/A2A/discussions/1677) · [AutoGen security testing](https://github.com/microsoft/autogen/discussions/7432)
-- **Contact:** trusted@synapseops.com (research & collaboration)
-
-Open to research collaboration and standards work.
+- **Correspondence:** [contact@pubpoint.com](mailto:contact@pubpoint.com?subject=Research%20correspondence) — research, speaking, and professional correspondence.
 
 ---
 
