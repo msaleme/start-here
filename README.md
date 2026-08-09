@@ -55,6 +55,8 @@ Enterprise architecture has four domains for what the enterprise builds and runs
 
 I do not just write about the agent workforce. I build the tools that prove how it fails and the research that measures it. The architecture rests on this, not on opinion.
 
+**Dated claims and evidence boundaries:** [PubPoint Facts & Evidence](https://pubpoint.com/facts-evidence/) — what the counts below mean, how they're measured, and what they don't prove.
+
 ### Govern: `constitutional-agent`
 
 [`constitutional-agent`](https://pypi.org/project/constitutional-agent/) on PyPI (**v0.7.0**) — the WHY-layer policy enforced at agent runtime, extracted from the reference implementation. `pip install constitutional-agent`
