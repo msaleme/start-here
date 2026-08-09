@@ -59,7 +59,7 @@ I do not just write about the agent workforce. I build the tools that prove how 
 
 ### Govern: `constitutional-agent`
 
-[`constitutional-agent`](https://pypi.org/project/constitutional-agent/) on PyPI (**v0.7.0**) — the WHY-layer policy enforced at agent runtime, extracted from the reference implementation. `pip install constitutional-agent`
+[`constitutional-agent`](https://pypi.org/project/constitutional-agent/) on PyPI (**v0.8.0**) — the WHY-layer policy enforced at agent runtime, extracted from the reference implementation. `pip install constitutional-agent`
 
 It evaluates authorized actions *before commitment*, and it composes risk **across sessions**: individually acceptable actions can accumulate into an unacceptable risk trajectory, so an agent that passes every per-call gate but crosses a cumulative threshold is still caught.
 
@@ -93,7 +93,7 @@ I study the gap between *who an agent is* and *how it behaves* — the **WHO vs.
 | **Signing Is Not Authorization** (receipts) | [10.5281/zenodo.21535452](https://doi.org/10.5281/zenodo.21535452) | A cryptographic signature proves origin, not permission — signed agent actions still require an authorization decision. |
 | **Constitutional Self-Governance (CSG)** | [10.5281/zenodo.19162104](https://doi.org/10.5281/zenodo.19162104) | The WHO vs. HOW governance gap — 77 days production data, 56 agents. |
 | **Beyond Identity Governance** | [10.5281/zenodo.19343034](https://doi.org/10.5281/zenodo.19343034) | Empirical evidence that gateways miss protocol-layer attacks — the gap, formalized. |
-| **Decision Load Index (DLI)** | [10.5281/zenodo.18217577](https://doi.org/10.5281/zenodo.18217577) | AI agents increase cognitive burden on operators — and how to measure it. |
+| **Decision Load Index (DLI)** | [10.5281/zenodo.18217577](https://doi.org/10.5281/zenodo.18217577) | DLI examines decision load in AI-augmented work — and how to measure it. |
 
 **Standards engagement:** 3 NIST submissions — CAISI RFI (Mar 1), NIST-CONCEPT-1 (Mar 12), NCCoE follow-up (Mar 21, 2026). x402 conformance-vector contribution to the Linux Foundation x402 Foundation ([x402-foundation/x402#2776](https://github.com/x402-foundation/x402/pull/2776)).
 
@@ -101,7 +101,7 @@ I study the gap between *who an agent is* and *how it behaves* — the **WHO vs.
 
 The four-layer model is not a whitepaper waiting for a reference implementation. The reference implementation came first; the architecture is the account of what it took to make it work.
 
-HRAO-E is a live production reference environment for constitutionally governed autonomous operations — a workforce of 50+ agents under a written constitution, with six-gate enforcement, per-agent delegated authority, and audit trails. It publishes operational status, agent activity, gate states, and audit evidence, and is a working instance of all four EAA layers: **Agent / Workforce · Capability / Tool · Control Plane · Governance**. Canonical home and live proof: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa).
+HRAO-E is a live governed reference environment for constitutionally governed autonomous operations — a workforce of 50+ agents under a written constitution, with six-gate enforcement, per-agent delegated authority, and audit trails. It publishes operational status, agent activity, gate states, and audit evidence, and is a working instance of all four EAA layers: **Agent / Workforce · Capability / Tool · Control Plane · Governance**. Canonical home and live proof: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa).
 
 ---
 
