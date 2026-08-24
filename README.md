@@ -3,6 +3,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mikesaleme-0A66C2?logo=linkedin)](https://www.linkedin.com/in/mikesaleme/)
 [![PyPI](https://img.shields.io/badge/PyPI-agent--security--harness-3775A9?logo=pypi)](https://pypi.org/project/agent-security-harness/)
 [![PyPI](https://img.shields.io/badge/PyPI-constitutional--agent-3775A9?logo=pypi)](https://pypi.org/project/constitutional-agent/)
+[![PyPI](https://img.shields.io/badge/PyPI-ace--experiment--framework-3775A9?logo=pypi)](https://pypi.org/project/ace-experiment-framework/)
 [![X (Twitter)](https://img.shields.io/badge/X-@mikesaleme-000000?logo=x)](https://x.com/mikesaleme)
 
 I design decision-safe architectures and adversarial evaluation systems so enterprises can scale autonomous agents without losing control.
@@ -14,14 +15,15 @@ Across 30 years of enterprise architecture — production integration across Oil
 | **Architect** | Autonomous agents require an enterprise-architecture domain built around delegated authority | [Enterprise Agent Architecture](https://cognitivethoughtengine.com/eaa) |
 | **Evaluate** | Security and governance claims can be tested adversarially, over the wire | [Agent Security Harness](https://github.com/msaleme/red-team-blue-team-agent-fabric) |
 | **Govern** | Authorized actions can be evaluated before commitment — and across sessions | [`constitutional-agent`](https://pypi.org/project/constitutional-agent/) |
+| **Assess** | Empirical optimization claims can be assessed against a declared contract and retained evidence | [`ace-experiment-framework`](https://pypi.org/project/ace-experiment-framework/) |
 
-> **One body of work:** I define the architecture, implement the governance mechanism, and build the evaluation system that tests whether it works.
+> **One body of work:** I define the architecture, implement the governance mechanism, test protocol behavior adversarially, and assess empirical claims against retained evidence.
 
 ---
 
 ## Start here in five minutes
 
-Three inspectable proofs, one per workstream:
+Four inspectable proofs, one per workstream:
 
 1. **Read the argument** — the Enterprise Agent Architecture series, the case for a fifth architecture domain: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa) (Parts 0–4, complete).
 2. **Run the evaluation** — send adversarial protocol traffic at an agent endpoint and grade what breaks:
@@ -30,6 +32,11 @@ Three inspectable proofs, one per workstream:
    agent-security test mcp --url http://your-server
    ```
 3. **Inspect the governance** — the runtime WHY-layer, including cross-session risk composition: `pip install constitutional-agent`. Live gate states, agent activity, and audit evidence: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa).
+4. **Assess an experiment claim** — apply a declared experiment contract to retained trial evidence:
+   ```bash
+   pip install ace-experiment-framework
+   ace assess experiment.yaml retained-trials.json --output ./ace-assessment
+   ```
 
 ---
 
@@ -81,6 +88,12 @@ An open-source framework that sends real adversarial payloads over the wire and 
 
 **How it differs.** Unlike configuration scanners, the harness sends adversarial protocol traffic and evaluates the resulting behavior. It complements static scanning and does not replace a scoped penetration test. Complementary to Invariant MCP-Scan (static), Cisco MCP Scanner (YARA), Snyk Agent Scan (config), NVIDIA Garak (model-layer). Distinct in full-stack agentic-payments coverage, AIUC-1 mapping, MCP server mode, and research backing.
 
+### Assess: ACE Experiment Framework
+
+**[ACE Experiment Framework](https://github.com/msaleme/ace-experiment-framework)** is available on [PyPI](https://pypi.org/project/ace-experiment-framework/). It evaluates an empirical optimization claim against a declared experiment contract and retained JSON or CSV trial evidence, producing a claim-scoped decision pack.
+
+ACE does not run the workload, create measurements, fill in missing evidence, or turn a narrow result into a general performance claim. It helps make a result reviewable before it earns a chart. See the [retained-evidence workflow](https://github.com/msaleme/ace-experiment-framework/blob/main/docs/RETAINED_EVIDENCE_WORKFLOW.md) and the [Token-Bleed R5 reference application](https://github.com/msaleme/token-bleed-benchmark/releases/tag/r5-results-2026-08-17).
+
 ### Selected Research and Evaluation Methods
 
 I study the gap between *who an agent is* and *how it behaves* — the **WHO vs. HOW problem**. Identity and authorization don't prevent an authorized agent from being manipulated into unsafe decisions. These are public preprints on Zenodo (not peer-reviewed); several are directly implemented as harness test modules.
@@ -112,7 +125,7 @@ HRAO-E is a live governed reference environment for constitutionally governed au
 - **LinkedIn:** [linkedin.com/in/mikesaleme](https://www.linkedin.com/in/mikesaleme/)
 - **X:** [x.com/mikesaleme](https://x.com/mikesaleme)
 - **Research record:** [Zenodo](https://zenodo.org/search?page=1&size=20&sort=newest&q=metadata.creators.person_or_org.identifiers.identifier%3A0009-0003-6736-1900) · [ORCID 0009-0003-6736-1900](https://orcid.org/0009-0003-6736-1900)
-- **PyPI:** [agent-security-harness](https://pypi.org/project/agent-security-harness/) · [constitutional-agent](https://pypi.org/project/constitutional-agent/)
+- **PyPI:** [agent-security-harness](https://pypi.org/project/agent-security-harness/) · [constitutional-agent](https://pypi.org/project/constitutional-agent/) · [ace-experiment-framework](https://pypi.org/project/ace-experiment-framework/)
 - **Community:** [A2A runtime attestation](https://github.com/a2aproject/A2A/discussions/1677) · [AutoGen security testing](https://github.com/microsoft/autogen/discussions/7432)
 - **Correspondence:** [contact@pubpoint.com](mailto:contact@pubpoint.com?subject=Research%20correspondence) — research, speaking, and professional correspondence.
 
