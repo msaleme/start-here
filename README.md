@@ -86,11 +86,11 @@ I study the gap between *who an agent is* and *how it behaves* — the **WHO vs.
 | Paper | DOI | Focus |
 |---|---|---|
 | **Enterprise Agent Architecture** (position paper) | [10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314) | The case for a fifth architecture domain: agents are a workforce, not an application tier. |
-| **Authorized but Refused** (telemetry) | [10.5281/zenodo.21263262](https://doi.org/10.5281/zenodo.21263262) | Six months, 451,163 events from a live autonomous enterprise: the governance layer refused its own *authenticated, authorized* agents 30,496 times — the measured base rate behind the WHO vs. HOW gap. |
-| **Authorized but Composed** (composition) | [10.5281/zenodo.21400261](https://doi.org/10.5281/zenodo.21400261) | Cross-session composition addresses a blind spot in per-call governance: individually acceptable actions can accumulate into an unacceptable risk trajectory. |
-| **Present vs. Provable** (methodology) | [10.5281/zenodo.21208547](https://doi.org/10.5281/zenodo.21208547) | A testable conformance methodology for delegated payment authority — can a verifier *prove* the executed payment is the one authorized? |
-| **Claim-Level Negative Testing** (evidence) | [10.5281/zenodo.21418701](https://doi.org/10.5281/zenodo.21418701) | Negative testing at the claim level: does a governance receipt actually prove what it asserts, or merely that a check was present? |
-| **Signing Is Not Authorization** (receipts) | [10.5281/zenodo.21535452](https://doi.org/10.5281/zenodo.21535452) | A cryptographic signature proves origin, not permission — signed agent actions still require an authorization decision. |
+| **Authorized but Refused** (telemetry) | [10.5281/zenodo.21263263](https://doi.org/10.5281/zenodo.21263263) | Six months, 451,163 events from a live autonomous enterprise: the governance layer refused its own *authenticated, authorized* agents 30,496 times — the measured base rate behind the WHO vs. HOW gap. |
+| **Authorized but Composed** (composition) | [10.5281/zenodo.21401743](https://doi.org/10.5281/zenodo.21401743) | Cross-session composition addresses a blind spot in per-call governance: individually acceptable actions can accumulate into an unacceptable risk trajectory. |
+| **Present vs. Provable** (methodology) | [10.5281/zenodo.21262985](https://doi.org/10.5281/zenodo.21262985) | A testable conformance methodology for delegated payment authority — can a verifier *prove* the executed payment is the one authorized? |
+| **Claim-Level Negative Testing** (evidence) | [10.5281/zenodo.21418702](https://doi.org/10.5281/zenodo.21418702) | Negative testing at the claim level: does a governance receipt actually prove what it asserts, or merely that a check was present? |
+| **Signing Is Not Authorization** (receipts) | [10.5281/zenodo.21535453](https://doi.org/10.5281/zenodo.21535453) | A cryptographic signature proves origin, not permission — signed agent actions still require an authorization decision. |
 | **Constitutional Self-Governance (CSG)** | [10.5281/zenodo.19162104](https://doi.org/10.5281/zenodo.19162104) | The WHO vs. HOW governance gap — 77 days production data, 56 agents. |
 | **Beyond Identity Governance** | [10.5281/zenodo.19343034](https://doi.org/10.5281/zenodo.19343034) | Empirical evidence that gateways miss protocol-layer attacks — the gap, formalized. |
 | **Decision Load Index (DLI)** | [10.5281/zenodo.18217577](https://doi.org/10.5281/zenodo.18217577) | DLI examines decision load in AI-augmented work — and how to measure it. |
@@ -109,6 +109,7 @@ HRAO-E is a live governed reference environment for constitutionally governed au
 
 - **LinkedIn:** [linkedin.com/in/mikesaleme](https://www.linkedin.com/in/mikesaleme/)
 - **X:** [x.com/mikesaleme](https://x.com/mikesaleme)
+- **Research record:** [Zenodo](https://zenodo.org/search?page=1&size=20&sort=newest&q=metadata.creators.person_or_org.identifiers.identifier%3A0009-0003-6736-1900) · [ORCID 0009-0003-6736-1900](https://orcid.org/0009-0003-6736-1900)
 - **PyPI:** [agent-security-harness](https://pypi.org/project/agent-security-harness/) · [constitutional-agent](https://pypi.org/project/constitutional-agent/)
 - **Community:** [A2A runtime attestation](https://github.com/a2aproject/A2A/discussions/1677) · [AutoGen security testing](https://github.com/microsoft/autogen/discussions/7432)
 - **Correspondence:** [contact@pubpoint.com](mailto:contact@pubpoint.com?subject=Research%20correspondence) — research, speaking, and professional correspondence.
