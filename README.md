@@ -94,13 +94,13 @@ An open-source framework that sends real adversarial payloads over the wire and 
 
 ACE does not run the workload, create measurements, fill in missing evidence, or turn a narrow result into a general performance claim. It helps make a result reviewable before it earns a chart. See the [retained-evidence workflow](https://github.com/msaleme/ace-experiment-framework/blob/main/docs/RETAINED_EVIDENCE_WORKFLOW.md) and the [Token-Bleed R5 reference application](https://github.com/msaleme/token-bleed-benchmark/releases/tag/r5-results-2026-08-17).
 
-### Selected Research and Evaluation Methods
+### Research preprints and evaluation methods
 
-I study the gap between *who an agent is* and *how it behaves* — the **WHO vs. HOW problem**. Identity and authorization don't prevent an authorized agent from being manipulated into unsafe decisions. These are public preprints on Zenodo (not peer-reviewed); several are directly implemented as harness test modules.
+I study the gap between *who an agent is* and *how it behaves* — the **WHO vs. HOW problem**. Identity and authorization don't prevent an authorized agent from being manipulated into unsafe decisions. This is the complete current set of public Zenodo research records. They are preprints, not peer-reviewed; several are directly implemented as harness test modules. For the recommended sequence and the relationship among them, use the [research map](https://pubpoint.com/research-map/).
 
 | Paper | DOI | Focus |
 |---|---|---|
-| **Enterprise Agent Architecture** (position paper) | [10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314) | The case for a fifth architecture domain: agents are a workforce, not an application tier. |
+| **Enterprise Agent Architecture** | [10.5281/zenodo.21207197](https://doi.org/10.5281/zenodo.21207197) | The case for a fifth architecture domain: agents are a workforce, not an application tier. |
 | **Authorized but Refused** (telemetry) | [10.5281/zenodo.21263263](https://doi.org/10.5281/zenodo.21263263) | Six months, 451,163 events from a live autonomous enterprise: the governance layer refused its own *authenticated, authorized* agents 30,496 times — the measured base rate behind the WHO vs. HOW gap. |
 | **Authorized but Composed** (composition) | [10.5281/zenodo.21401743](https://doi.org/10.5281/zenodo.21401743) | Cross-session composition addresses a blind spot in per-call governance: individually acceptable actions can accumulate into an unacceptable risk trajectory. |
 | **Present vs. Provable** (methodology) | [10.5281/zenodo.21262985](https://doi.org/10.5281/zenodo.21262985) | A testable conformance methodology for delegated payment authority — can a verifier *prove* the executed payment is the one authorized? |
@@ -108,7 +108,11 @@ I study the gap between *who an agent is* and *how it behaves* — the **WHO vs.
 | **Signing Is Not Authorization** (receipts) | [10.5281/zenodo.21535453](https://doi.org/10.5281/zenodo.21535453) | A cryptographic signature proves origin, not permission — signed agent actions still require an authorization decision. |
 | **Constitutional Self-Governance (CSG)** | [10.5281/zenodo.19162104](https://doi.org/10.5281/zenodo.19162104) | The WHO vs. HOW governance gap — 77 days production data, 56 agents. |
 | **Beyond Identity Governance** | [10.5281/zenodo.19343034](https://doi.org/10.5281/zenodo.19343034) | Empirical evidence that gateways miss protocol-layer attacks — the gap, formalized. |
+| **Detecting Normalization of Deviance in Multi-Agent Systems** | [10.5281/zenodo.19195516](https://doi.org/10.5281/zenodo.19195516) | A graph-based approach to behavioral drift detection in multi-agent systems. |
 | **Decision Load Index (DLI)** | [10.5281/zenodo.18217577](https://doi.org/10.5281/zenodo.18217577) | DLI examines decision load in AI-augmented work — and how to measure it. |
+| **AI News Evidence Pack** | [10.5281/zenodo.19826561](https://doi.org/10.5281/zenodo.19826561) | A bounded empirical evidence pack on sentiment-conditioned news-driven drift in 10 AI movers. |
+| **Community-Driven Security for AI Agents** | [10.5281/zenodo.21297453](https://doi.org/10.5281/zenodo.21297453) | How an adversarial evaluation framework can accept contributions while preserving integrity and trust boundaries. |
+| **Agent Security Harness** | [10.5281/zenodo.21839184](https://doi.org/10.5281/zenodo.21839184) | The executable adversarial test artifact that operationalizes the protocol and governance research. |
 
 **Standards engagement:** 3 NIST submissions — CAISI RFI (Mar 1), NIST-CONCEPT-1 (Mar 12), NCCoE follow-up (Mar 21, 2026). x402 conformance-vector contribution to the Linux Foundation x402 Foundation ([x402-foundation/x402#2776](https://github.com/x402-foundation/x402/pull/2776)).
 
