@@ -57,7 +57,7 @@ I do not just write about the agent workforce. I build the tools that prove how 
 
 **Dated claims and evidence boundaries:** [PubPoint Facts & Evidence](https://pubpoint.com/facts-evidence/) — what the counts below mean, how they're measured, and what they don't prove.
 
-**Research map:** [the canonical reading path](docs/research-map.md) connects the research from decision context and enterprise architecture through runtime governance, adversarial evaluation, evidence, and the executable harness.
+**Research map:** [the canonical reading path](https://pubpoint.com/research-map/) connects the research from decision context and enterprise architecture through runtime governance, adversarial evaluation, evidence, and the executable harness.
 
 ### Govern: `constitutional-agent`
 
