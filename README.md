@@ -80,8 +80,8 @@ An open-source framework that sends real adversarial payloads over the wire and 
 
 **[red-team-blue-team-agent-fabric](https://github.com/msaleme/red-team-blue-team-agent-fabric)** — adversarial agent-security test harness with AIUC-1 test mappings and JSON audit reports.
 
-- **Current release:** v4.15.0 — **603 tests across 43 test-bearing modules**.
-- **GitHub Action:** `uses: msaleme/red-team-blue-team-agent-fabric@v4.15.0`
+- **Current release:** v4.16.0 — **608 tests across 43 test-bearing modules**.
+- **GitHub Action:** `uses: msaleme/red-team-blue-team-agent-fabric@v4.16.0`
 - **MCP server mode:** any AI agent can invoke the tests directly.
 - **AIUC-1 crosswalk:** maps to the testable certification requirements — [see the mapping](https://github.com/msaleme/red-team-blue-team-agent-fabric#aiuc-1-pre-certification-crosswalk).
 - **Independently exercised** by a community user against live infrastructure ([AutoGen discussion](https://github.com/microsoft/autogen/discussions/7432)).
