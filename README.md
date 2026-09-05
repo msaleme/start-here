@@ -88,6 +88,12 @@ An open-source framework that sends real adversarial payloads over the wire and 
 
 **How it differs.** Unlike configuration scanners, the harness sends adversarial protocol traffic and evaluates the resulting behavior. It complements static scanning and does not replace a scoped penetration test. Complementary to Invariant MCP-Scan (static), Cisco MCP Scanner (YARA), Snyk Agent Scan (config), NVIDIA Garak (model-layer). Distinct in full-stack agentic-payments coverage, AIUC-1 mapping, MCP server mode, and research backing.
 
+### Verify: authority-to-execution replay packet
+
+**[authority-execution-replay](https://github.com/msaleme/authority-execution-replay)** — a replay packet published so that a verifier can be written against it by someone else. The manifest pins the packet SHA-256 (`afaf6090…`), the three required controls (`allow-exact-action`, `deny-wrong-target`, `deny-post-approval-mutation`), and the replay steps. It also asks that you implement a verifier *before* reading the reference implementation, so a matching result means something.
+
+**I0 synthetic fixture contract, published for independent reimplementation; no I1 result is yet recorded.** Per its own claim boundary, the corpus is synthetic, owned-fixture and networkless — not a live MCP/API test, production evidence, external identity binding, security audit, certification, endorsement, or adoption claim.
+
 ### Assess: ACE Experiment Framework
 
 **[ACE Experiment Framework](https://github.com/msaleme/ace-experiment-framework)** is available on [PyPI](https://pypi.org/project/ace-experiment-framework/). It evaluates an empirical optimization claim against a declared experiment contract and retained JSON or CSV trial evidence, producing a claim-scoped decision pack.
