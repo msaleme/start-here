@@ -12,7 +12,7 @@ Across 30 years of enterprise architecture — production integration across Oil
 
 | Workstream | What it proves | Start here |
 |---|---|---|
-| **Architect** | Autonomous agents require an enterprise-architecture domain built around delegated authority | [Enterprise Agent Architecture](https://cognitivethoughtengine.com/eaa) |
+| **Architect** | Autonomous agents require an enterprise-architecture domain built around delegated authority | [Enterprise Agent Architecture](https://cognitivethoughtengine.com/eaa?utm_source=github&utm_medium=readme&utm_campaign=start_here) |
 | **Evaluate** | Security and governance claims can be tested adversarially, over the wire | [Agent Security Harness](https://github.com/msaleme/red-team-blue-team-agent-fabric) |
 | **Govern** | Authorized actions can be evaluated before commitment — and across sessions | [`constitutional-agent`](https://pypi.org/project/constitutional-agent/) |
 | **Assess** | Empirical optimization claims can be assessed against a declared contract and retained evidence | [`ace-experiment-framework`](https://pypi.org/project/ace-experiment-framework/) |
@@ -25,13 +25,13 @@ Across 30 years of enterprise architecture — production integration across Oil
 
 Four inspectable proofs, one per workstream:
 
-1. **Read the argument** — the Enterprise Agent Architecture series, the case for a fifth architecture domain: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa) (Parts 0–4, complete).
+1. **Read the argument** — the Enterprise Agent Architecture series, the case for a fifth architecture domain: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa?utm_source=github&utm_medium=readme&utm_campaign=start_here) (Parts 0–4, complete).
 2. **Run the evaluation** — send adversarial protocol traffic at an agent endpoint and grade what breaks:
    ```bash
    pip install agent-security-harness
    agent-security test mcp --url http://your-server
    ```
-3. **Inspect the governance** — the runtime WHY-layer, including cross-session risk composition: `pip install constitutional-agent`. Live gate states, agent activity, and audit evidence: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa).
+3. **Inspect the governance** — the runtime WHY-layer, including cross-session risk composition: `pip install constitutional-agent`. Live gate states, agent activity, and audit evidence: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa?utm_source=github&utm_medium=readme&utm_campaign=start_here).
 4. **Assess an experiment claim** — apply a declared experiment contract to retained trial evidence:
    ```bash
    pip install ace-experiment-framework
@@ -49,12 +49,12 @@ Enterprise architecture has four domains for what the enterprise builds and runs
 | Part | Layer | Status |
 |---|---|---|
 | Part 0 — The Case for a Fifth Architecture Domain | Position paper | Published — [DOI 10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314) |
-| Part 1 — No Box for a Non-Human Workforce | Agent / Workforce | [Published](https://cognitivethoughtengine.com/eaa/part-1) |
-| Part 2 — What an Agent Can Reach ≠ What It May Touch | Capability / Tool | [Published](https://cognitivethoughtengine.com/eaa/part-2) |
-| Part 3 — A Rule the Runtime Doesn't Enforce Is Theater | Control Plane | [Published](https://cognitivethoughtengine.com/eaa/part-3) |
-| Part 4 — When the Agent Acts, the Enterprise Answers | Governance | [Published](https://cognitivethoughtengine.com/eaa/part-4) |
+| Part 1 — No Box for a Non-Human Workforce | Agent / Workforce | [Published](https://cognitivethoughtengine.com/eaa/part-1?utm_source=github&utm_medium=readme&utm_campaign=start_here) |
+| Part 2 — What an Agent Can Reach ≠ What It May Touch | Capability / Tool | [Published](https://cognitivethoughtengine.com/eaa/part-2?utm_source=github&utm_medium=readme&utm_campaign=start_here) |
+| Part 3 — A Rule the Runtime Doesn't Enforce Is Theater | Control Plane | [Published](https://cognitivethoughtengine.com/eaa/part-3?utm_source=github&utm_medium=readme&utm_campaign=start_here) |
+| Part 4 — When the Agent Acts, the Enterprise Answers | Governance | [Published](https://cognitivethoughtengine.com/eaa/part-4?utm_source=github&utm_medium=readme&utm_campaign=start_here) |
 
-**Practitioner artifacts:** [Agent Governance Maturity Model](https://cognitivethoughtengine.com/eaa/maturity-model) · [Standards Landscape](https://cognitivethoughtengine.com/eaa/standards-landscape) · [Board Questions](https://cognitivethoughtengine.com/eaa/board-questions) · [TOGAF / ArchiMate extension](https://cognitivethoughtengine.com/eaa/togaf-extension) · [The Governance Layer OpenClaw Skipped](https://cognitivethoughtengine.com/eaa/openclaw)
+**Practitioner artifacts:** [Agent Governance Maturity Model](https://cognitivethoughtengine.com/eaa/maturity-model?utm_source=github&utm_medium=readme&utm_campaign=start_here) · [Standards Landscape](https://cognitivethoughtengine.com/eaa/standards-landscape?utm_source=github&utm_medium=readme&utm_campaign=start_here) · [Board Questions](https://cognitivethoughtengine.com/eaa/board-questions?utm_source=github&utm_medium=readme&utm_campaign=start_here) · [TOGAF / ArchiMate extension](https://cognitivethoughtengine.com/eaa/togaf-extension?utm_source=github&utm_medium=readme&utm_campaign=start_here) · [The Governance Layer OpenClaw Skipped](https://cognitivethoughtengine.com/eaa/openclaw?utm_source=github&utm_medium=readme&utm_campaign=start_here)
 
 ---
 
@@ -98,7 +98,7 @@ An open-source framework that sends real adversarial payloads over the wire and 
 
 **[ACE Experiment Framework](https://github.com/msaleme/ace-experiment-framework)** is available on [PyPI](https://pypi.org/project/ace-experiment-framework/). It evaluates an empirical optimization claim against a declared experiment contract and retained JSON or CSV trial evidence, producing a claim-scoped decision pack.
 
-ACE does not run the workload, create measurements, fill in missing evidence, or turn a narrow result into a general performance claim. It helps make a result reviewable before it earns a chart. ACE’s first public reference application is [Token-Bleed R5](https://doi.org/10.5281/zenodo.22100920), a synthetic opaque-schema runtime characterization on a single local Ollama OpenAI-compatible configuration using `qwen3-coder:30b`. At 0% candidate-generator misses, its oracle-controlled bundled route changes both candidate membership and representation; it used 96.9%–97.9% fewer mean prompt tokens and higher mean F1 than verbose full context. The lexical token-efficiency/value claim was rejected under the frozen 3× rule. This is not production, customer-data, ROI, cross-model, or independently raw-reproducible evidence. See the [retained-evidence workflow](https://github.com/msaleme/ace-experiment-framework/blob/main/docs/RETAINED_EVIDENCE_WORKFLOW.md), [source release](https://github.com/msaleme/token-bleed-benchmark/releases/tag/r5-preprint-2026-08-25.1), and [pinned release commit](https://github.com/msaleme/token-bleed-benchmark/commit/c4cf83c3259c87712e21aa3eda6f6428e4d26fd4).
+ACE does not run the workload, create measurements, fill in missing evidence, or turn a narrow result into a general performance claim. It helps make a result reviewable before it earns a chart. ACE’s first public reference application is [Token-Bleed R5](https://doi.org/10.5281/zenodo.22100919), a synthetic opaque-schema runtime characterization on a single local Ollama OpenAI-compatible configuration using `qwen3-coder:30b`. At 0% candidate-generator misses, its oracle-controlled bundled route changes both candidate membership and representation; it used 96.9%–97.9% fewer mean prompt tokens and higher mean F1 than verbose full context. The lexical token-efficiency/value claim was rejected under the frozen 3× rule. This is not production, customer-data, ROI, cross-model, or independently raw-reproducible evidence. See the [retained-evidence workflow](https://github.com/msaleme/ace-experiment-framework/blob/main/docs/RETAINED_EVIDENCE_WORKFLOW.md), [source release](https://github.com/msaleme/token-bleed-benchmark/releases/tag/r5-preprint-2026-08-25.1), and [pinned release commit](https://github.com/msaleme/token-bleed-benchmark/commit/c4cf83c3259c87712e21aa3eda6f6428e4d26fd4).
 
 ### Research preprints and evaluation methods
 
@@ -106,19 +106,19 @@ I study the gap between *who an agent is* and *how it behaves* — the **WHO vs.
 
 | Paper | DOI | Focus |
 |---|---|---|
-| **Enterprise Agent Architecture** | [10.5281/zenodo.21207197](https://doi.org/10.5281/zenodo.21207197) | The case for a fifth architecture domain: agents are a workforce, not an application tier. |
-| **Authorized but Refused** (telemetry) | [10.5281/zenodo.21263263](https://doi.org/10.5281/zenodo.21263263) | Six months, 451,163 events from a live autonomous enterprise: the governance layer refused its own *authenticated, authorized* agents 30,496 times — the measured base rate behind the WHO vs. HOW gap. |
-| **Authorized but Composed** (composition) | [10.5281/zenodo.21401743](https://doi.org/10.5281/zenodo.21401743) | Cross-session composition addresses a blind spot in per-call governance: individually acceptable actions can accumulate into an unacceptable risk trajectory. |
-| **Present vs. Provable** (methodology) | [10.5281/zenodo.21262985](https://doi.org/10.5281/zenodo.21262985) | A testable conformance methodology for delegated payment authority — can a verifier *prove* the executed payment is the one authorized? |
-| **Claim-Level Negative Testing** (evidence) | [10.5281/zenodo.21418702](https://doi.org/10.5281/zenodo.21418702) | Negative testing at the claim level: does a governance receipt actually prove what it asserts, or merely that a check was present? |
-| **Signing Is Not Authorization** (receipts) | [10.5281/zenodo.21535453](https://doi.org/10.5281/zenodo.21535453) | A cryptographic signature proves origin, not permission — signed agent actions still require an authorization decision. |
+| **Enterprise Agent Architecture** | [10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314) | The case for a fifth architecture domain: agents are a workforce, not an application tier. Same deposit as Part 0 of the series above. |
+| **Authorized but Refused** (telemetry) | [10.5281/zenodo.21263262](https://doi.org/10.5281/zenodo.21263262) | Six months, 451,163 events from a live autonomous enterprise: the governance layer refused its own *authenticated, authorized* agents 30,496 times — the measured base rate behind the WHO vs. HOW gap. |
+| **Authorized but Composed** (composition) | [10.5281/zenodo.21400261](https://doi.org/10.5281/zenodo.21400261) | Cross-session composition addresses a blind spot in per-call governance: individually acceptable actions can accumulate into an unacceptable risk trajectory. |
+| **Present vs. Provable** (methodology) | [10.5281/zenodo.21208547](https://doi.org/10.5281/zenodo.21208547) | A testable conformance methodology for delegated payment authority — can a verifier *prove* the executed payment is the one authorized? |
+| **Claim-Level Negative Testing** (evidence) | [10.5281/zenodo.21418701](https://doi.org/10.5281/zenodo.21418701) | Negative testing at the claim level: does a governance receipt actually prove what it asserts, or merely that a check was present? |
+| **Signing Is Not Authorization** (receipts) | [10.5281/zenodo.21535452](https://doi.org/10.5281/zenodo.21535452) | A cryptographic signature proves origin, not permission — signed agent actions still require an authorization decision. |
 | **Constitutional Self-Governance (CSG)** | [10.5281/zenodo.19162103](https://doi.org/10.5281/zenodo.19162103) | The WHO vs. HOW governance gap — 85 days production data, 48 agents. Concept DOI: always resolves to the latest version (currently v1.3.0). |
-| **Beyond Identity Governance** | [10.5281/zenodo.19343034](https://doi.org/10.5281/zenodo.19343034) | Empirical evidence that gateways miss protocol-layer attacks — the gap, formalized. |
-| **Detecting Normalization of Deviance in Multi-Agent Systems** | [10.5281/zenodo.19195516](https://doi.org/10.5281/zenodo.19195516) | A graph-based approach to behavioral drift detection in multi-agent systems. |
-| **Decision Load Index (DLI)** | [10.5281/zenodo.18217577](https://doi.org/10.5281/zenodo.18217577) | DLI examines decision load in AI-augmented work — and how to measure it. |
-| **AI News Evidence Pack** | [10.5281/zenodo.19826561](https://doi.org/10.5281/zenodo.19826561) | A bounded empirical evidence pack on sentiment-conditioned news-driven drift in 10 AI movers. |
-| **Community-Driven Security for AI Agents** | [10.5281/zenodo.21297453](https://doi.org/10.5281/zenodo.21297453) | How an adversarial evaluation framework can accept contributions while preserving integrity and trust boundaries. |
-| **Agent Security Harness** | [10.5281/zenodo.21839184](https://doi.org/10.5281/zenodo.21839184) | The executable adversarial test artifact that operationalizes the protocol and governance research. |
+| **Beyond Identity Governance** | [10.5281/zenodo.19343033](https://doi.org/10.5281/zenodo.19343033) | Empirical evidence that gateways miss protocol-layer attacks — the gap, formalized. |
+| **Detecting Normalization of Deviance in Multi-Agent Systems** | [10.5281/zenodo.19195515](https://doi.org/10.5281/zenodo.19195515) | A graph-based approach to behavioral drift detection in multi-agent systems. |
+| **Decision Load Index (DLI)** | [10.5281/zenodo.18207847](https://doi.org/10.5281/zenodo.18207847) | DLI examines decision load in AI-augmented work — and how to measure it. |
+| **AI News Evidence Pack** | [10.5281/zenodo.19826560](https://doi.org/10.5281/zenodo.19826560) | A bounded empirical evidence pack on sentiment-conditioned news-driven drift in 10 AI movers. |
+| **Community-Driven Security for AI Agents** | [10.5281/zenodo.19343107](https://doi.org/10.5281/zenodo.19343107) | How an adversarial evaluation framework can accept contributions while preserving integrity and trust boundaries. |
+| **Agent Security Harness** | [10.5281/zenodo.20366512](https://doi.org/10.5281/zenodo.20366512) | The executable adversarial test artifact that operationalizes the protocol and governance research. |
 
 **Standards engagement:** 3 NIST submissions — CAISI RFI (Mar 1), NIST-CONCEPT-1 (Mar 12), NCCoE follow-up (Mar 21, 2026). x402 conformance-vector contribution to the Linux Foundation x402 Foundation ([x402-foundation/x402#2776](https://github.com/x402-foundation/x402/pull/2776)).
 
@@ -126,7 +126,7 @@ I study the gap between *who an agent is* and *how it behaves* — the **WHO vs.
 
 The four-layer model is not a whitepaper waiting for a reference implementation. The reference implementation came first; the architecture is the account of what it took to make it work.
 
-HRAO-E is a live governed reference environment for constitutionally governed autonomous operations — a workforce of 50+ agents under a written constitution, with six-gate enforcement, per-agent delegated authority, and audit trails. It publishes operational status, agent activity, gate states, and audit evidence, and is a working instance of all four EAA layers: **Agent / Workforce · Capability / Tool · Control Plane · Governance**. Canonical home and live proof: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa).
+HRAO-E is a live governed reference environment for constitutionally governed autonomous operations — a workforce of 50+ agents under a written constitution, with six-gate enforcement, per-agent delegated authority, and audit trails. It publishes operational status, agent activity, gate states, and audit evidence, and is a working instance of all four EAA layers: **Agent / Workforce · Capability / Tool · Control Plane · Governance**. Canonical home and live proof: [cognitivethoughtengine.com/eaa](https://cognitivethoughtengine.com/eaa?utm_source=github&utm_medium=readme&utm_campaign=start_here).
 
 ---
 
