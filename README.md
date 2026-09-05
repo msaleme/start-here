@@ -104,6 +104,8 @@ ACE does not run the workload, create measurements, fill in missing evidence, or
 
 I study the gap between *who an agent is* and *how it behaves* — the **WHO vs. HOW problem**. Identity and authorization don't prevent an authorized agent from being manipulated into unsafe decisions. This is the complete current set of public Zenodo research records. They are preprints, not peer-reviewed; several are directly implemented as harness test modules. For the recommended sequence and the relationship among them, use the [research map](https://pubpoint.com/research-map/).
 
+**Every DOI below is a Zenodo *concept* DOI — it always resolves to the latest version of that record, so these links stay correct as papers are revised.**
+
 | Paper | DOI | Focus |
 |---|---|---|
 | **Enterprise Agent Architecture** | [10.5281/zenodo.21105314](https://doi.org/10.5281/zenodo.21105314) | The case for a fifth architecture domain: agents are a workforce, not an application tier. Same deposit as Part 0 of the series above. |
@@ -112,7 +114,7 @@ I study the gap between *who an agent is* and *how it behaves* — the **WHO vs.
 | **Present vs. Provable** (methodology) | [10.5281/zenodo.21208547](https://doi.org/10.5281/zenodo.21208547) | A testable conformance methodology for delegated payment authority — can a verifier *prove* the executed payment is the one authorized? |
 | **Claim-Level Negative Testing** (evidence) | [10.5281/zenodo.21418701](https://doi.org/10.5281/zenodo.21418701) | Negative testing at the claim level: does a governance receipt actually prove what it asserts, or merely that a check was present? |
 | **Signing Is Not Authorization** (receipts) | [10.5281/zenodo.21535452](https://doi.org/10.5281/zenodo.21535452) | A cryptographic signature proves origin, not permission — signed agent actions still require an authorization decision. |
-| **Constitutional Self-Governance (CSG)** | [10.5281/zenodo.19162103](https://doi.org/10.5281/zenodo.19162103) | The WHO vs. HOW governance gap — 85 days production data, 48 agents. Concept DOI: always resolves to the latest version (currently v1.3.0). |
+| **Constitutional Self-Governance (CSG)** | [10.5281/zenodo.19162103](https://doi.org/10.5281/zenodo.19162103) | The WHO vs. HOW governance gap — 85 days production data, 48 agents. |
 | **Beyond Identity Governance** | [10.5281/zenodo.19343033](https://doi.org/10.5281/zenodo.19343033) | Empirical evidence that gateways miss protocol-layer attacks — the gap, formalized. |
 | **Detecting Normalization of Deviance in Multi-Agent Systems** | [10.5281/zenodo.19195515](https://doi.org/10.5281/zenodo.19195515) | A graph-based approach to behavioral drift detection in multi-agent systems. |
 | **Decision Load Index (DLI)** | [10.5281/zenodo.18207847](https://doi.org/10.5281/zenodo.18207847) | DLI examines decision load in AI-augmented work — and how to measure it. |
